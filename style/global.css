@@ -12,7 +12,7 @@
     }
 }
 
-@media only screen and (max-width: 728px){
+@media only screen and (max-width: 425px){
     .grid-template {
         display: grid;
         grid-template-columns: repeat(4, minmax(0, 1fr));
