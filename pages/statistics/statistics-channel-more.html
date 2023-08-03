@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./statistics-channel-more.css" />
+    <link rel="stylesheet" href="../../style/global.css" />
+  </head>
+  <body>
+    <main>
+      <section id="hero" class="py-3">
+        <!-- Navigation Bar -->
+        <nav
+          class="container-fluid d-flex justify-content-between align-items-center w-100 mb-5"
+          aria-label="navigation-bar"
+        >
+          <!-- Menu Icon -->
+          <img src="../../assets/icons/icon-menus.svg" alt="menu-icon" />
+
+          <div
+            class="nav-items d-flex align-content-center gap-4 h-fit-content"
+          >
+            <div class="nav-item w-fit-content h-fit-content">Sample</div>
+            <div class="nav-item w-fit-content h-fit-content">Sample</div>
+            <div class="nav-item w-fit-content h-fit-content">Sample</div>
+            <div class="nav-item w-fit-content h-fit-content">Sample</div>
+          </div>
+
+          <!-- User Profile Icon -->
+          <img src="../../assets/icons/icon-user-profile.svg" alt="user-icon" />
+        </nav>
+
+        <section
+          id="village-statistics"
+          class="container-xxl d-flex flex-column justify-content-between align-items-center gap-5 mt-5"
+        >
+          <div
+            class="list-statistics d-flex justify-content-between align-items-center gap-4"
+          >
+            <!-- First Content - Statistik Layanan Mandiri -->
+            <div
+              class="custom-card card d-flex flex-column justify-content-center align-items-center gap-3"
+            >
+              <img
+                src="../../assets/illustrations/illustration-phone.png"
+                alt="illustration-phone"
+                width="75"
+                height="75"
+              />
+
+              <h4 class="fw-bolder text-center font-helvetica-neue fs-4 mt-3">
+                Layanan Mandiri
+              </h4>
+            </div>
+
+            <!-- Second Content - Statistik Meta Mart -->
+            <div
+              class="custom-card d-flex flex-column justify-content-center align-items-center gap-3"
+            >
+              <img
+                src="../../assets/illustrations/illustration-family.png"
+                alt="illustration-family"
+                width="75"
+                height="75"
+              />
+
+              <h4 class="fw-bolder text-center font-helvetica-neue fs-4 mt-3">
+                MetaMart
+              </h4>
+            </div>
+
+            <!-- Third Content - Statistik Pengaduan -->
+            <div
+              class="custom-card d-flex flex-column justify-content-center align-items-center gap-3"
+            >
+              <img
+                src="../../assets/illustrations/illustration-phone.png"
+                alt="illustration-phone"
+                width="75"
+                height="75"
+              />
+
+              <h4 class="fw-bolder text-center font-helvetica-neue fs-4 mt-3">
+                Statistik Pengaduan
+              </h4>
+            </div>
+
+            <!-- Fourth Content - Galeri Desa -->
+            <div
+              class="custom-card d-flex flex-column justify-content-center align-items-center gap-3"
+            >
+              <img
+                src="../../assets/illustrations/illustration-period.png"
+                alt="illustration-period"
+                width="75"
+                height="75"
+              />
+
+              <h4 class="fw-bolder text-center font-helvetica-neue fs-4 mt-3">
+                Galeri Desa
+              </h4>
+            </div>
+
+            <!-- Five Content - Dana Desa -->
+            <div
+              class="custom-card d-flex flex-column justify-content-center align-items-center gap-3"
+            >
+              <img
+                src="../../assets/illustrations/illustration-statistics.png"
+                alt="illustration-phone"
+                width="75"
+                height="75"
+              />
+
+              <h4 class="fw-bolder text-center font-helvetica-neue fs-4 mt-3">
+                Dana Desa
+              </h4>
+            </div>
+          </div>
+        </section>
+
+        <section id="statistics-channel-more" class="container-xxl mt-5">
+          <div class="custom-card d-flex flex-column gap-5 p-4 rounded-4">
+            <section
+              id="data-table"
+              class="d-flex flex-column align-items-center gap-2 w-100"
+            >
+              <div class="heading d-flex align-items-center w-100">
+                <div class="box-icon p-2">
+                  <img
+                    src="../../assets/icons/icon-folder.svg"
+                    alt="icon-folder"
+                  />
+                </div>
+
+                <h3 class="font-roboto fs-5 fw-bold text-uppercase mb-0 ps-2">
+                  Produk Hukum
+                </h3>
+              </div>
+
+              <section id="content" class="p-3 w-100 d-flex flex-column gap-4">
+                <!-- Section filtering data -->
+                <section id="filter" class="row justify-content-start">
+                  <div class="col-6 col-md-4 col-lg-3">
+                    <div class="d-flex flex-column">
+                      <h4
+                        class="text-black-secondary font-roboto fw-semibold fs-6"
+                      >
+                        Kategori
+                      </h4>
+
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected class="">Semua Kategori</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-4 col-lg-3">
+                    <div class="d-flex flex-column">
+                      <h4
+                        class="text-black-secondary font-roboto fw-semibold fs-6"
+                      >
+                        Tahun
+                      </h4>
+
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected class="">Semua</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                </section>
+
+                <!-- Section Sorting Data -->
+                <section id="sorting" class="row justify-content-start">
+                  <div class="col-12 col-md-2">
+                    <div class="d-flex align-items-center gap-2">
+                      <p class="text-black-secondary font-roboto fs-6 mb-0">
+                        Show
+                      </p>
+
+                      <select
+                        class="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option selected class="">10</option>
+                        <option value="1">20</option>
+                        <option value="2">50</option>
+                        <option value="3">100</option>
+                      </select>
+
+                      <p class="text-black-secondary font-roboto fs-6 mb-0">
+                        entries
+                      </p>
+                    </div>
+                  </div>
+                </section>
+
+                <!-- Section Table Data -->
+                <section id="data-table">
+                  <table class="table table-striped table-bordered">
+                    <thead>
+                      <tr>
+                        <th
+                          scope="col"
+                          class="text-black-secondary font-roboto fw-semibold fs-6 position-relative top-0 start-0 end-0"
+                        >
+                          No
+
+                          <img
+                            src="../../assets/icons/icon-sort.svg"
+                            alt="icon-sort"
+                            width="18"
+                            height="18"
+                            class="position-absolute end-1 top-50 translate-middle-y"
+                          />
+                        </th>
+                        <th
+                          scope="col"
+                          class="text-black-secondary font-roboto fw-semibold fs-6 position-relative top-0 start-0 end-0"
+                        >
+                          Judul Produk Hukum
+
+                          <img
+                            src="../../assets/icons/icon-sort.svg"
+                            alt="icon-sort"
+                            width="18"
+                            height="18"
+                            class="position-absolute end-1 top-50 translate-middle-y"
+                          />
+                        </th>
+                        <th
+                          scope="col"
+                          class="text-black-secondary font-roboto fw-semibold fs-6 position-relative top-0 start-0 end-0"
+                        >
+                          Kategori
+
+                          <img
+                            src="../../assets/icons/icon-sort.svg"
+                            alt="icon-sort"
+                            width="18"
+                            height="18"
+                            class="position-absolute end-1 top-50 translate-middle-y"
+                          />
+                        </th>
+                        <th
+                          scope="col"
+                          class="text-black-secondary font-roboto fw-semibold fs-6 position-relative top-0 start-0 end-0"
+                        >
+                          Tahun
+
+                          <img
+                            src="../../assets/icons/icon-sort.svg"
+                            alt="icon-sort"
+                            width="18"
+                            height="18"
+                            class="position-absolute end-1 top-50 translate-middle-y"
+                          />
+                        </th>
+                        <th
+                          scope="col"
+                          class="text-black-secondary font-roboto fw-semibold fs-6"
+                        >
+                          Aksi
+                        </th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr class="vertical-align-middle">
+                        <td class="text-black-secondary font-roboto fs-6">1</td>
+                        <td class="text-black-secondary font-roboto fs-6">
+                          SK Tim Penyusun RPJMDes Tahun 2017
+                        </td>
+                        <td class="text-black-secondary font-roboto fs-6">
+                          Keputusan Kepala Desa
+                        </td>
+                        <td class="text-black-secondary font-roboto fs-6">
+                          2017
+                        </td>
+                        <td>
+                          <!-- Button download with anchor -->
+                          <a href="#" class="btn btn-primary" download>
+                            Unduh
+                          </a>
+                        </td>
+                      </tr>
+
+                      <tr class="vertical-align-middle">
+                        <td class="text-black-secondary font-roboto fs-6">2</td>
+                        <td class="text-black-secondary font-roboto fs-6">
+                          SK Pengangkatan RT dan Pemberhentian RT Baru
+                        </td>
+                        <td class="text-black-secondary font-roboto fs-6">
+                          Keputusan Kepala Desa
+                        </td>
+                        <td class="text-black-secondary font-roboto fs-6">
+                          2017
+                        </td>
+                        <td>
+                          <!-- Button download with anchor -->
+                          <a href="#" class="btn btn-primary" download>
+                            Unduh
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100"
+                  >
+                    <p class="text-black-secondary font-roboto fs-6 mb-0">
+                      Showing 1 to 4 of 4 entries
+                    </p>
+
+                    <div class="btn-actions d-flex align-items-center gap-1">
+                      <button
+                        type="button"
+                        class="btn btn-outline-secondary text-black"
+                      >
+                        Previous
+                      </button>
+                      <button type="button" class="btn btn-primary">1</button>
+                      <button
+                        type="button"
+                        class="btn btn-outline-secondary text-black"
+                      >
+                        Next
+                      </button>
+                    </div>
+                  </div>
+                </section>
+
+                <section
+                  id="pagination"
+                  class="d-flex justify-content-center w-100"
+                >
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </section>
+              </section>
+            </section>
+          </div>
+        </section>
+      </section>
+
+      <footer>
+        <section id="content" class="container-fluid px-5 py-5">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="d-flex flex-column gap-5">
+                <div class="heading d-flex flex-column gap-2">
+                  <h4 class="fw-bolder font-helvetica-neue fs-4 d-inline">
+                    Website Resmi
+                  </h4>
+
+                  <div class="divider"></div>
+                </div>
+
+                <div class="d-flex gap-3 align-items-start">
+                  <!-- Logo -->
+                  <div class="box-logo p-2 bg-white rounded-2">
+                    <img src="../../assets/images/logo.png" alt="logo" />
+                  </div>
+
+                  <div class="information">
+                    <h2 class="fw-bolder font-roboto fs-2">Pekon Podomoro</h2>
+
+                    <p class="fs-6 fw-semibold font-roboto w-90">
+                      Jl. Nawatama. No.175, Podomoro, Kec. Pringsewu, Kabupaten
+                      Pringsewu, Lampung 35373
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="d-flex flex-column gap-5">
+                <div class="heading d-flex flex-column gap-2">
+                  <h4 class="fw-bolder font-helvetica-neue fs-4 d-inline">
+                    Hubungi Kami
+                  </h4>
+
+                  <div class="divider"></div>
+                </div>
+
+                <div class="list-contacts d-flex flex-column gap-2">
+                  <div class="d-flex gap-2">
+                    <!-- Phone Icon -->
+                    <img
+                      src="../../assets/icons/icon-phone.svg"
+                      alt="icon-phone"
+                      width="28"
+                      height="28"
+                    />
+
+                    <h6 class="fs-5 fw-bolder font-helvetica-neue">
+                      +62 823 7897 9192
+                    </h6>
+                  </div>
+
+                  <div class="d-flex gap-2">
+                    <!-- Mail Icon -->
+                    <img
+                      src="../../assets/icons/icon-mail.svg"
+                      alt="icon-mail"
+                      width="28"
+                      height="28"
+                    />
+
+                    <h6 class="fs-5 fw-bolder font-helvetica-neue">
+                      podomoro@gmail.com
+                    </h6>
+                  </div>
+
+                  <div class="list-social-media d-flex gap-2">
+                    <a
+                      href="https://facebook.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="../../assets/icons/icon-facebook.svg"
+                        alt="icon-facebook"
+                        width="70"
+                        height="70"
+                      />
+                    </a>
+
+                    <a
+                      href="https://instagram.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="../../assets/icons/icon-instagram.svg"
+                        alt="icon-instagram"
+                        width="70"
+                        height="70"
+                      />
+                    </a>
+
+                    <a
+                      href="https://youtube.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="../../assets/icons/icon-youtube.svg"
+                        alt="icon-youtube"
+                        width="70"
+                        height="70"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="d-flex flex-column gap-5">
+                <div class="heading d-flex flex-column gap-2">
+                  <h4 class="fw-bolder font-helvetica-neue fs-4 d-inline">
+                    Lokasi Balai Desa
+                  </h4>
+
+                  <div class="divider"></div>
+                </div>
+
+                <!-- Google Maps -->
+                <img
+                  src="../../assets/images/g-maps.png"
+                  alt="google-maps"
+                  width="332"
+                  height="180"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="copyrights" class="container-fluid px-5 pt-4 pb-3">
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="fs-6 fw-semibold font-roboto">
+              | Dokumentasi | Tentang | Kontak | Privasi |
+            </p>
+            <p class="fs-6 fw-semibold font-roboto">
+              Copyright© 2023. MetaDesa, Support By Smart village
+            </p>
+          </div>
+        </section>
+      </footer>
+    </main>
+
+    <!-- All scripts that we will require -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

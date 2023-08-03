@@ -1,0 +1,56 @@
+main section#hero {
+  background: url("../../assets/images/bg-hero-statistics.png") no-repeat;
+  background-size: 100%;
+}
+
+section#hero section#content div.custom-card,
+section#hero section#village-statistics div.custom-card,
+section#hero section#statistics-ages div.custom-card {
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.25);
+}
+
+section#hero section#village-statistics div.custom-card.card-active {
+  background: #8fe7ff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+section#hero section#statistics-ages div.custom-card div.box-tab {
+  border: 2px inset rgb(143, 231, 255);
+  padding: 40px;
+  background: linear-gradient(to right, rgb(0 0 0 / 0.5), rgb(0 0 0 / 0.5)),
+    url("../../assets/images/bg-castle.png");
+  background-size: cover;
+}
+
+section#hero section#statistics-ages div.custom-card div.box-tab.box-active {
+  background: linear-gradient(
+      to right,
+      rgb(29 161 242 / 0.9),
+      rgb(29 161 242 / 0.9)
+    ),
+    url("../../assets/images/bg-castle.png");
+}
+
+section#hero section#statistics-ages section#data-table div.heading {
+  border-bottom: 1px solid #dee2e6;
+}
+
+section#hero section#statistics-ages section#data-table div.heading h4 {
+  border-bottom: 5px solid rgb(29, 161, 242);
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  section#hero section#content div.custom-card {
+    padding: 50px 68px 30px;
+  }
+
+  section#hero section#village-statistics div.custom-card {
+    width: 235px;
+    height: 235px;
+
+    padding: 34px 8px;
+  }
+}
