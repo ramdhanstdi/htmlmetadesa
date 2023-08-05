@@ -1,0 +1,52 @@
+main section#hero {
+  background: url("../../assets/images/bg-hero-statistics.png") no-repeat;
+  background-size: 100%;
+}
+
+section#main section#hero {
+  background: url("../../assets/images/bg-hero-statistics.png") no-repeat;
+  background-size: 100%;
+}
+
+section#hero section#sidebar-menu {
+  border-radius: 45px;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.25);
+  gap: 50px;
+}
+
+section#hero section#monograph-population section#content {
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.25);
+}
+
+section#content section#population-content div.heading,
+section#content section#administrative-region div.heading,
+section#content section#income-data div.heading,
+section#content section#employement-data div.heading,
+section#content section#education-data div.heading,
+section#content section#help-data div.heading {
+  border-bottom: 3px solid #1da1f2;
+}
+
+section#content section#population-content div.custom-card-gradient,
+section#content section#administrative-region div.custom-card-gradient,
+section#content section#income-data div.custom-card-gradient {
+  border-radius: 20px;
+  background: url("../../assets/images/bg-custom-radial.png") no-repeat;
+  background-size: cover;
+}
+
+section#content div.custom-card-gradient div.custom-card,
+section#content section#administrative-region div.custom-card,
+section#content section#income-data div.custom-card {
+  border-radius: 10px;
+  border: 1px solid #1da1f2;
+}
+
+@media only screen and (min-width: 1024px) {
+  section#hero section#monograph-population div.custom-card {
+    padding: 16px;
+  }
+}
