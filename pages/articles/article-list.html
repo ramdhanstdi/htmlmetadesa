@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article</title>
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./article-list.css" />
+    <link rel="stylesheet" href="../../style/global.css" />
+  </head>
+  <body>
+    <main>
+      <section
+        id="hero"
+        class="py-3 position-relative top-0 start-0 end-0 h-screen swiper mySwiper"
+      >
+        <nav
+          style="z-index: 5"
+          class="position-absolute top-0 start-0 mt-4 container-fluid d-flex justify-content-between align-items-center w-100 mb-5"
+        >
+          <!-- Menu Icon -->
+          <img src="../../assets/icons/icon-menus.svg" alt="menu-icon" />
+
+          <div
+            class="nav-items d-flex align-content-center gap-4 h-fit-content"
+          >
+            <div
+              class="nav-item w-fit-content h-fit-content d-flex align-items-center gap-1 py-2 px-4"
+            >
+              <img src="../../assets/icons/icon-home.svg" alt="icon-home" />
+
+              <p class="font-roboto fw-bold fs-5 text-black mb-0">Beranda</p>
+            </div>
+            <div
+              class="nav-item w-fit-content h-fit-content d-flex align-items-center gap-2 py-2 px-3"
+            >
+              <img
+                src="../../assets/icons/icon-monograph.svg"
+                alt="icon-monograph"
+              />
+
+              <p class="font-roboto fw-bold fs-5 text-black mb-0">Monografi</p>
+            </div>
+            <div
+              class="nav-item w-fit-content h-fit-content d-flex align-items-center gap-1 py-2 px-4"
+            >
+              <img
+                src="../../assets/icons/icon-statistics.svg"
+                alt="icon-statistics"
+              />
+
+              <p class="font-roboto fw-bold fs-5 text-black mb-0">Statistik</p>
+            </div>
+            <div
+              class="nav-item nav-active w-fit-content h-fit-content d-flex align-items-center gap-1 py-2 px-4"
+            >
+              <img
+                src="../../assets/icons/icon-articles-active.svg"
+                alt="icon-articles"
+              />
+
+              <p class="font-roboto fw-bold fs-5 text-primary mb-0">Artikel</p>
+            </div>
+          </div>
+
+          <!-- User Profile Icon -->
+          <img src="../../assets/icons/icon-user-profile.svg" alt="user-icon" />
+        </nav>
+
+        <div class="swiper-wrapper position-absolute top-0 start-0">
+          <div class="swiper-slide h-screen">
+            <div class="box-image position-relative top-0 start-0 h-100">
+              <img
+                src="../../assets/images/bg-castle-large.png"
+                alt="bg-castle"
+                style="z-index: 1"
+                class="w-100 h-100 position-absolute top-0 start-0"
+              />
+
+              <div
+                style="z-index: 2"
+                class="w-100 h-100 overlay position-absolute top-0 start-0"
+              >
+                &nbsp;
+              </div>
+            </div>
+
+            <div
+              style="z-index: 3"
+              class="box-content d-flex flex-column align-items-center position-absolute top-50 start-50 translate-middle w-100"
+            >
+              <div class="headline px-5 py-3">
+                <h3 class="text-white font-helvetica-neue fw-bold fs-3 mb-0">
+                  Headline
+                </h3>
+              </div>
+
+              <h1
+                class="text-white font-helvetica-neue text-center fw-bold mb-0"
+              >
+                Desa Wisata Terbaik Kabupaten Pringsewu
+              </h1>
+
+              <a
+                href="#"
+                class="btn btn-primary btn-gradient text-black fw-bold px-5 py-3"
+                >Lihat >></a
+              >
+            </div>
+          </div>
+
+          <div class="swiper-slide h-screen">
+            <div class="box-image position-relative top-0 start-0 h-100">
+              <img
+                src="../../assets/images/bg-castle-large.png"
+                alt="bg-castle"
+                style="z-index: 1"
+                class="w-100 h-100 position-absolute top-0 start-0"
+              />
+
+              <div
+                style="z-index: 2"
+                class="w-100 h-100 overlay position-absolute top-0 start-0"
+              >
+                &nbsp;
+              </div>
+            </div>
+
+            <div
+              style="z-index: 3"
+              class="box-content d-flex flex-column align-items-center position-absolute top-50 start-50 translate-middle w-100"
+            >
+              <div class="headline px-5 py-3">
+                <h3 class="text-white font-helvetica-neue fw-bold fs-3 mb-0">
+                  Headline
+                </h3>
+              </div>
+
+              <h1
+                class="text-white font-helvetica-neue text-center fw-bold mb-0"
+              >
+                Desa Wisata Terbaik Kabupaten Pringsewu
+              </h1>
+
+              <a
+                href="#"
+                class="btn btn-primary btn-gradient text-black fw-bold px-5 py-3"
+                >Lihat >></a
+              >
+            </div>
+          </div>
+
+          <div class="swiper-slide h-screen">
+            <div class="box-image position-relative top-0 start-0 h-100">
+              <img
+                src="../../assets/images/bg-castle-large.png"
+                alt="bg-castle"
+                style="z-index: 1"
+                class="w-100 h-100 position-absolute top-0 start-0"
+              />
+
+              <div
+                style="z-index: 2"
+                class="w-100 h-100 overlay position-absolute top-0 start-0"
+              >
+                &nbsp;
+              </div>
+            </div>
+
+            <div
+              style="z-index: 3"
+              class="box-content d-flex flex-column align-items-center position-absolute top-50 start-50 translate-middle w-100"
+            >
+              <div class="headline px-5 py-3">
+                <h3 class="text-white font-helvetica-neue fw-bold fs-3 mb-0">
+                  Headline
+                </h3>
+              </div>
+
+              <h1
+                class="text-white font-helvetica-neue text-center fw-bold mb-0"
+              >
+                Desa Wisata Terbaik Kabupaten Pringsewu
+              </h1>
+
+              <a
+                href="#"
+                class="btn btn-primary btn-gradient text-black fw-bold px-5 py-3"
+                >Lihat >></a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="button-next" class="swiper-button-next">
+          <img src="../../assets/icons/icon-arrow-next.svg" alt="icon-arrow" />
+        </div>
+        <div class="swiper-button-prev">
+          <img
+            src="../../assets/icons/icon-arrow-previous.svg"
+            alt="icon-arrow"
+          />
+        </div>
+        <div class="swiper-pagination">Sample</div>
+      </section>
+
+      <!-- List Villages  -->
+      <section
+        id="list-villages"
+        class="container-xxl mt-5 swiper swipper-villages"
+      >
+        <div class="swiper-wrapper">
+          <div class="swiper-slide w-fit-content">
+            <div
+              class="box-tab rounded-3 d-flex flex-column justify-content-center align-items-center"
+            >
+              <h1 class="text-white fs-5 fw-bolder font-helvetica-neue">
+                Desa Podomoro
+              </h1>
+            </div>
+          </div>
+
+          <div class="swiper-slide w-fit-content">
+            <div
+              class="box-tab rounded-3 d-flex flex-column justify-content-center align-items-center"
+            >
+              <h1 class="text-white fs-5 fw-bolder font-helvetica-neue">
+                Desa Podosari
+              </h1>
+            </div>
+          </div>
+
+          <div class="swiper-slide w-fit-content">
+            <div
+              class="box-tab rounded-3 d-flex flex-column justify-content-center align-items-center"
+            >
+              <h1 class="text-white fs-5 fw-bolder font-helvetica-neue">
+                Desa Pringsewu Sel
+              </h1>
+            </div>
+          </div>
+
+          <div class="swiper-slide w-fit-content">
+            <div
+              class="box-tab rounded-3 d-flex flex-column justify-content-center align-items-center"
+            >
+              <h1 class="text-white fs-5 fw-bolder font-helvetica-neue">
+                Desa Pringsewu Sel
+              </h1>
+            </div>
+          </div>
+
+          <div class="swiper-slide w-fit-content">
+            <div
+              class="box-tab rounded-3 d-flex flex-column justify-content-center align-items-center"
+            >
+              <h1 class="text-white fs-5 fw-bolder font-helvetica-neue">
+                Desa Podosari
+              </h1>
+            </div>
+          </div>
+          <div class="swiper-slide w-fit-content">
+            <div
+              class="box-tab rounded-3 d-flex flex-column justify-content-center align-items-center"
+            >
+              <h1 class="text-white fs-5 fw-bolder font-helvetica-neue">
+                Desa Podosari
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Popular  -->
+      <section id="popular">
+        <div class="d-flex justify-content-center text-center mb-4">
+          <div
+            class="h3 w-25 fw-bold pb-3 border border-3 border-primary border-start-0 border-end-0 border-top-0"
+          >
+            Artikel Popular
+          </div>
+        </div>
+        <div class="grid-template">
+          <div class="col-span-6 main-card">
+            <div class="w-100 img">
+              <img
+                src="https://mmc.kalteng.go.id/files/berita/24112020031547_0.jpg"
+                alt="main-card"
+                width="100%"
+              />
+            </div>
+            <div class="py-2 px-3">
+              <div class="d-flex gap-2">
+                <img src="../../assets/icons/icon-date.svg" alt="date" />
+                <div class="date fw-normal">13 Jan 2012</div>
+              </div>
+              <div class="title fw-bold">
+                Penyaluran Bantuan Langsung Tunai Dana Desa (BLT-DD) Pekon
+                Podomoro
+              </div>
+            </div>
+          </div>
+          <div class="col-span-6 d-flex flex-column gap-3">
+            <div class="list-card">
+              <div class="img">
+                <img
+                  src="https://sippn.menpan.go.id/images/article/large/header-sipp14.jpg"
+                  alt="list-card"
+                  width="100%"
+                />
+              </div>
+              <div class="p-3">
+                <div class="d-flex gap-2">
+                  <img src="../../assets/icons/icon-date.svg" alt="date" />
+                  <div class="date fw-normal">13 Jan 2012</div>
+                </div>
+                <div class="date fw-bold">
+                  Penyaluran Bantuan Langsung Tunai Dana Desa (BLT-DD)
+                </div>
+              </div>
+            </div>
+            <div class="list-card">
+              <div class="img">
+                <img
+                  src="https://sippn.menpan.go.id/images/article/large/header-sipp14.jpg"
+                  alt="list-card"
+                  width="100%"
+                />
+              </div>
+              <div class="p-3">
+                <div class="d-flex gap-2">
+                  <img src="../../assets/icons/icon-date.svg" alt="date" />
+                  <div class="date fw-normal">13 Jan 2012</div>
+                </div>
+                <div class="date fw-bold">
+                  Penyaluran Bantuan Langsung Tunai Dana Desa (BLT-DD)
+                </div>
+              </div>
+            </div>
+            <div class="list-card">
+              <div class="img">
+                <img
+                  src="https://sippn.menpan.go.id/images/article/large/header-sipp14.jpg"
+                  alt="list-card"
+                  width="100%"
+                />
+              </div>
+              <div class="p-3">
+                <div class="d-flex gap-2">
+                  <img src="../../assets/icons/icon-date.svg" alt="date" />
+                  <div class="date fw-normal">13 Jan 2012</div>
+                </div>
+                <div class="date fw-bold">
+                  Penyaluran Bantuan Langsung Tunai Dana Desa (BLT-DD)
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- All List  -->
+      <section id="all-list" class="grid-template my-5 mx-1 mx-md-5">
+        <div class="card-box col-span-4">
+          <div class="w-100 img">
+            <img
+              src="https://ichef.bbci.co.uk/news/1024/branded_news/63FD/production/_92279552_img_0050.jpg"
+              alt="img"
+              width="100%"
+            />
+          </div>
+          <div class="py-2 px-3">
+            <div class="d-flex gap-2">
+              <img src="../../assets/icons/icon-date.svg" alt="date" />
+              <div class="date fw-normal">13 Jan 2012</div>
+            </div>
+            <div class="title fw-bold">
+              Pembangunan Kantor Desa Sidodadi Yang Mewah
+            </div>
+          </div>
+        </div>
+        <div class="card-box col-span-4">
+          <div class="w-100 img">
+            <img
+              src="https://ichef.bbci.co.uk/news/1024/branded_news/63FD/production/_92279552_img_0050.jpg"
+              alt="img"
+              width="100%"
+            />
+          </div>
+          <div class="py-2 px-3">
+            <div class="d-flex gap-2">
+              <img src="../../assets/icons/icon-date.svg" alt="date" />
+              <div class="date fw-normal">13 Jan 2012</div>
+            </div>
+            <div class="title fw-bold">
+              Pembangunan Kantor Desa Sidodadi Yang Mewah
+            </div>
+          </div>
+        </div>
+        <div class="card-box col-span-4">
+          <div class="w-100 img">
+            <img
+              src="https://ichef.bbci.co.uk/news/1024/branded_news/63FD/production/_92279552_img_0050.jpg"
+              alt="img"
+              width="100%"
+            />
+          </div>
+          <div class="py-2 px-3">
+            <div class="d-flex gap-2">
+              <img src="../../assets/icons/icon-date.svg" alt="date" />
+              <div class="date fw-normal">13 Jan 2012</div>
+            </div>
+            <div class="title fw-bold">
+              Pembangunan Kantor Desa Sidodadi Yang Mewah
+            </div>
+          </div>
+        </div>
+        <div class="card-box col-span-4">
+          <div class="w-100 img">
+            <img
+              src="https://ichef.bbci.co.uk/news/1024/branded_news/63FD/production/_92279552_img_0050.jpg"
+              alt="img"
+              width="100%"
+            />
+          </div>
+          <div class="py-2 px-3">
+            <div class="d-flex gap-2">
+              <img src="../../assets/icons/icon-date.svg" alt="date" />
+              <div class="date fw-normal">13 Jan 2012</div>
+            </div>
+            <div class="title fw-bold">
+              Pembangunan Kantor Desa Sidodadi Yang Mewah
+            </div>
+          </div>
+        </div>
+        <div class="card-box col-span-4">
+          <div class="w-100 img">
+            <img
+              src="https://ichef.bbci.co.uk/news/1024/branded_news/63FD/production/_92279552_img_0050.jpg"
+              alt="img"
+              width="100%"
+            />
+          </div>
+          <div class="py-2 px-3">
+            <div class="d-flex gap-2">
+              <img src="../../assets/icons/icon-date.svg" alt="date" />
+              <div class="date fw-normal">13 Jan 2012</div>
+            </div>
+            <div class="title fw-bold">
+              Pembangunan Kantor Desa Sidodadi Yang Mewah
+            </div>
+          </div>
+        </div>
+        <div class="card-box col-span-4">
+          <div class="w-100 img">
+            <img
+              src="https://ichef.bbci.co.uk/news/1024/branded_news/63FD/production/_92279552_img_0050.jpg"
+              alt="img"
+              width="100%"
+            />
+          </div>
+          <div class="py-2 px-3">
+            <div class="d-flex gap-2">
+              <img src="../../assets/icons/icon-date.svg" alt="date" />
+              <div class="date fw-normal">13 Jan 2012</div>
+            </div>
+            <div class="title fw-bold">
+              Pembangunan Kantor Desa Sidodadi Yang Mewah
+            </div>
+          </div>
+        </div>
+        <div class="card-box col-span-4">
+          <div class="w-100 img">
+            <img
+              src="https://ichef.bbci.co.uk/news/1024/branded_news/63FD/production/_92279552_img_0050.jpg"
+              alt="img"
+              width="100%"
+            />
+          </div>
+          <div class="py-2 px-3">
+            <div class="d-flex gap-2">
+              <img src="../../assets/icons/icon-date.svg" alt="date" />
+              <div class="date fw-normal">13 Jan 2012</div>
+            </div>
+            <div class="title fw-bold">
+              Pembangunan Kantor Desa Sidodadi Yang Mewah
+            </div>
+          </div>
+        </div>
+        <div class="card-box col-span-4">
+          <div class="w-100 img">
+            <img
+              src="https://ichef.bbci.co.uk/news/1024/branded_news/63FD/production/_92279552_img_0050.jpg"
+              alt="img"
+              width="100%"
+            />
+          </div>
+          <div class="py-2 px-3">
+            <div class="d-flex gap-2">
+              <img src="../../assets/icons/icon-date.svg" alt="date" />
+              <div class="date fw-normal">13 Jan 2012</div>
+            </div>
+            <div class="title fw-bold">
+              Pembangunan Kantor Desa Sidodadi Yang Mewah
+            </div>
+          </div>
+        </div>
+        <div class="card-box col-span-4">
+          <div class="w-100 img">
+            <img
+              src="https://ichef.bbci.co.uk/news/1024/branded_news/63FD/production/_92279552_img_0050.jpg"
+              alt="img"
+              width="100%"
+            />
+          </div>
+          <div class="py-2 px-3">
+            <div class="d-flex gap-2">
+              <img src="../../assets/icons/icon-date.svg" alt="date" />
+              <div class="date fw-normal">13 Jan 2012</div>
+            </div>
+            <div class="title fw-bold">
+              Pembangunan Kantor Desa Sidodadi Yang Mewah
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pagination  -->
+      <section id="pagination" class="d-flex justify-content-center w-100 my-4">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <footer>
+        <section id="content" class="container-fluid px-5 py-5">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="d-flex flex-column gap-5">
+                <div class="heading d-flex flex-column gap-2">
+                  <h4 class="fw-bolder font-helvetica-neue fs-4 d-inline">
+                    Website Resmi
+                  </h4>
+
+                  <div class="divider"></div>
+                </div>
+
+                <div class="d-flex gap-3 align-items-start">
+                  <!-- Logo -->
+                  <div class="box-logo p-2 bg-white rounded-2">
+                    <img src="../../assets/images/logo.png" alt="logo" />
+                  </div>
+
+                  <div class="information">
+                    <h2 class="fw-bolder font-roboto fs-2">Pekon Podomoro</h2>
+
+                    <p class="fs-6 fw-semibold font-roboto w-90">
+                      Jl. Nawatama. No.175, Podomoro, Kec. Pringsewu, Kabupaten
+                      Pringsewu, Lampung 35373
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="d-flex flex-column gap-5">
+                <div class="heading d-flex flex-column gap-2">
+                  <h4 class="fw-bolder font-helvetica-neue fs-4 d-inline">
+                    Hubungi Kami
+                  </h4>
+
+                  <div class="divider"></div>
+                </div>
+
+                <div class="list-contacts d-flex flex-column gap-2">
+                  <div class="d-flex gap-2">
+                    <!-- Phone Icon -->
+                    <img
+                      src="../../assets/icons/icon-phone.svg"
+                      alt="icon-phone"
+                      width="28"
+                      height="28"
+                    />
+
+                    <h6 class="fs-5 fw-bolder font-helvetica-neue">
+                      +62 823 7897 9192
+                    </h6>
+                  </div>
+
+                  <div class="d-flex gap-2">
+                    <!-- Mail Icon -->
+                    <img
+                      src="../../assets/icons/icon-mail.svg"
+                      alt="icon-mail"
+                      width="28"
+                      height="28"
+                    />
+
+                    <h6 class="fs-5 fw-bolder font-helvetica-neue">
+                      podomoro@gmail.com
+                    </h6>
+                  </div>
+
+                  <div class="list-social-media d-flex gap-2">
+                    <a
+                      href="https://facebook.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="../../assets/icons/icon-facebook.svg"
+                        alt="icon-facebook"
+                        width="70"
+                        height="70"
+                      />
+                    </a>
+
+                    <a
+                      href="https://instagram.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="../../assets/icons/icon-instagram.svg"
+                        alt="icon-instagram"
+                        width="70"
+                        height="70"
+                      />
+                    </a>
+
+                    <a
+                      href="https://youtube.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="../../assets/icons/icon-youtube.svg"
+                        alt="icon-youtube"
+                        width="70"
+                        height="70"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="d-flex flex-column gap-5">
+                <div class="heading d-flex flex-column gap-2">
+                  <h4 class="fw-bolder font-helvetica-neue fs-4 d-inline">
+                    Lokasi Balai Desa
+                  </h4>
+
+                  <div class="divider"></div>
+                </div>
+
+                <!-- Google Maps -->
+                <img
+                  src="../../assets/images/g-maps.png"
+                  alt="google-maps"
+                  width="332"
+                  height="180"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="copyrights" class="container-fluid px-5 pt-4 pb-3">
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="fs-6 fw-semibold font-roboto">
+              | Dokumentasi | Tentang | Kontak | Privasi |
+            </p>
+            <p class="fs-6 fw-semibold font-roboto">
+              Copyright© 2023. MetaDesa, Support By Smart village
+            </p>
+          </div>
+        </section>
+      </footer>
+    </main>
+
+    <!-- All scripts that we will require -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+
+      var swiperVillages = new Swiper(".swipper-villages", {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>

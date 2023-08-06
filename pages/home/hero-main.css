@@ -305,6 +305,7 @@ section#transparansi div.custom-card-content div.card-body {
     font-size: 14px;
   }
 }
+
 @media only screen and (max-width: 426px) {
   section#hero section#left-content {
     width: 100%;
