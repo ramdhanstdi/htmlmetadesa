@@ -122,7 +122,11 @@ footer section#copyrights {
   border: 1px solid var(--blue-primary);
 }
 
-@media only screen and (max-width: 728px) {
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+@media only screen and (max-width: 769px) {
   .grid-template {
     display: grid;
     grid-template-columns: repeat(8, minmax(0, 1fr));
@@ -130,11 +134,11 @@ footer section#copyrights {
   }
 }
 
-@media only screen and (max-width: 728px) {
+@media only screen and (max-width: 426px) {
   .grid-template {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 32px;
+    gap: 12px;
   }
 }
 

@@ -1,0 +1,14 @@
+swiper-container {
+  width: 240px;
+  height: 320px;
+}
+
+swiper-slide {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 18px;
+  font-weight: bold;
+  background-color: white;
+}

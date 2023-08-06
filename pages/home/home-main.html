@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./hero-main.css" />
+    <link rel="stylesheet" href="../../style/global.css" />
+  </head>
+  <body>
+    <main>
+      <section id="hero" class="pt-3">
+        <!-- Navigation Bar -->
+        <nav
+          class="container-fluid d-flex justify-content-between align-items-center w-100 mb-5"
+        >
+          <!-- Menu Icon -->
+          <img src="../../assets/icons/icon-menus.svg" alt="menu-icon" />
+
+          <div
+            class="nav-items d-md-flex align-content-center gap-4 h-fit-content"
+          >
+            <div
+              class="nav-item w-fit-content h-fit-content d-flex gap-2 card-nav-active"
+            >
+              <img src="../../assets/icons/icon-home.svg" alt="home-icon" />
+              <div class="fs-5 fw-bold">Home</div>
+            </div>
+            <div
+              class="nav-item w-fit-content h-fit-content d-flex gap-2 card-nav"
+            >
+              <img
+                src="../../assets/icons/icon-monograph.svg"
+                alt="monograph-icon"
+              />
+              <div class="fs-5 fw-bold">Monografi</div>
+            </div>
+            <div
+              class="nav-item w-fit-content h-fit-content d-flex gap-2 card-nav"
+            >
+              <img src="../../assets/icons/icon-statistic.svg" alt="" />
+              <div class="fs-5 fw-bold">Statistik</div>
+            </div>
+            <div
+              class="nav-item w-fit-content h-fit-content d-flex gap-2 card-nav"
+            >
+              <img src="../../assets/icons/icon-article.svg" alt="" />
+              <div class="fs-5 fw-bold">Artikel</div>
+            </div>
+          </div>
+
+          <!-- User Profile Icon -->
+          <img src="../../assets/icons/icon-user-profile.svg" alt="user-icon" />
+        </nav>
+
+        <!-- Content Hero  -->
+        <section id="content-hero">
+          <div id="left-content" class="mb-3">
+            <div class="d-flex">
+              <div class="box-logo px-3 py-4 bg-white rounded-2 bg-opacity-50">
+                <img
+                  src="../../assets/images/big-logo.png"
+                  alt="logo"
+                  width="68px"
+                />
+              </div>
+              <div class="ms-3">
+                <div class="title-head fw-bolder">Pekon Podomoro</div>
+                <div class="sub-title-head fw-bold">
+                  Jl. Nawatama. No.175, Podomoro, Kec. Pringsewu, Kabupaten
+                  Pringsewu, Lampung 35373
+                </div>
+              </div>
+            </div>
+            <!-- Sholat  -->
+            <div class="grid-template mt-md-2 mt-lg-5">
+              <div
+                class="col-span-2 card-sholat d-flex flex-column align-items-center p-2"
+              >
+                <img
+                  src="../../assets/images/masjid.png"
+                  alt="masjid"
+                  width="65px"
+                />
+                <div class="text-bottom fs-6">Jadwal Sholat</div>
+              </div>
+              <div
+                class="col-span-2 card-sholat d-flex flex-column align-items-center overflow-hidden"
+              >
+                <div class="bg-white w-100 fs-4 fw-bold text-center">Subuh</div>
+                <div class="text-bottom fs-2">04:49</div>
+              </div>
+              <div
+                class="col-span-2 card-sholat d-flex flex-column align-items-center overflow-hidden"
+              >
+                <div class="bg-white w-100 fs-4 fw-bold text-center">
+                  Dzuhur
+                </div>
+                <div class="text-bottom fs-2">12:18</div>
+              </div>
+              <div
+                class="col-span-2 card-sholat d-flex flex-column align-items-center overflow-hidden"
+              >
+                <div class="bg-white w-100 fs-4 fw-bold text-center">Ashar</div>
+                <div class="text-bottom fs-2">15:32</div>
+              </div>
+              <div
+                class="col-span-2 card-sholat d-flex flex-column align-items-center overflow-hidden"
+              >
+                <div class="bg-white w-100 fs-4 fw-bold text-center">
+                  Magrib
+                </div>
+                <div class="text-bottom fs-2">18:26</div>
+              </div>
+              <div
+                class="col-span-2 card-sholat d-flex flex-column align-items-center overflow-hidden"
+              >
+                <div class="bg-white w-100 fs-4 fw-bold text-center">Isya</div>
+                <div class="text-bottom fs-2">19:36</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card Swiper  -->
+          <div id="right-content">
+            <swiper-container
+              class="mySwiper"
+              effect="cards"
+              grab-cursor="true"
+            >
+              <swiper-slide>
+                <img src="../../assets/images/card-items.png" alt="items" />
+                <div class="fs-7 opacity-75 fw-light text-center">
+                  13 Feb 2023
+                </div>
+                <div class="text-center fs-7">
+                  Penyaluran Bantuan Langsung Tunai Dana Desa (BLT-DD) Pekon
+                  Podomoro
+                </div>
+              </swiper-slide>
+              <swiper-slide>
+                <img src="../../assets/images/card-items.png" alt="items" />
+                <div class="fs-7 opacity-75 fw-light text-center">
+                  13 Feb 2023
+                </div>
+                <div class="text-center fs-7">
+                  Penyaluran Bantuan Langsung Tunai Dana Desa (BLT-DD) Pekon
+                  Podomoro
+                </div>
+              </swiper-slide>
+              <swiper-slide>
+                <img src="../../assets/images/card-items.png" alt="items" />
+                <div class="fs-7 opacity-75 fw-light text-center">
+                  13 Feb 2023
+                </div>
+                <div class="text-center fs-7">
+                  Penyaluran Bantuan Langsung Tunai Dana Desa (BLT-DD) Pekon
+                  Podomoro
+                </div>
+              </swiper-slide>
+              <swiper-slide>
+                <img src="../../assets/images/card-items.png" alt="items" />
+                <div class="fs-7 opacity-75 fw-light text-center">
+                  13 Feb 2023
+                </div>
+                <div class="text-center fs-7">
+                  Penyaluran Bantuan Langsung Tunai Dana Desa (BLT-DD) Pekon
+                  Podomoro
+                </div>
+              </swiper-slide>
+              <swiper-slide>
+                <img src="../../assets/images/card-items.png" alt="items" />
+                <div class="fs-7 opacity-75 fw-light text-center">
+                  13 Feb 2023
+                </div>
+                <div class="text-center fs-7">
+                  Penyaluran Bantuan Langsung Tunai Dana Desa (BLT-DD) Pekon
+                  Podomoro
+                </div>
+              </swiper-slide>
+            </swiper-container>
+          </div>
+        </section>
+      </section>
+      <div id="running-text" class="d-flex gap-2">
+        <div class="bg-primary py-1 px-3 text-white">Info</div>
+        <marquee class="bg-white rounded-2" behavior="" direction=""
+          >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit unde
+          nam praesentium adipisci voluptatum? Consequatur voluptatem doloribus
+          libero provident quo itaque quas, voluptates obcaecati! Eaque tempora
+          incidunt suscipit ipsa soluta?</marquee
+        >
+        <div class="bg-primary rounded-1">icon</div>
+        <div class="bg-danger rounded-1">lock</div>
+        <div class="bg-warning rounded-1">lock</div>
+      </div>
+      <section id="menu-selector">
+        <div class="card-menu text-center">
+          <img
+            src="../../assets/illustrations/illustration-phone.png"
+            alt="illustration-phone"
+          />
+          <div class="fw-bold fs-5 mt-4">Pelayanan Mandiri</div>
+        </div>
+        <div class="card-menu text-center">
+          <img
+            src="../../assets/illustrations/ilustration-monitor.png"
+            alt="illustration-monitor"
+          />
+          <div class="fw-bold fs-5 mt-4">Meta Mart</div>
+        </div>
+        <div class="card-menu text-center">
+          <img
+            src="../../assets/illustrations/illustration-phone.png"
+            alt="illustration-phone"
+          />
+          <div class="fw-bold fs-5 mt-4">Pengaduan</div>
+        </div>
+        <div class="card-menu text-center">
+          <img
+            src="../../assets/illustrations/ilustration-art.png"
+            alt="ilustration-art"
+          />
+          <div class="fw-bold fs-5 mt-4">Galeri Desa</div>
+        </div>
+        <div class="card-menu text-center">
+          <img
+            src="../../assets/illustrations/ilustration-static.png"
+            alt="illustration-statistics"
+          />
+          <div class="fw-bold fs-5 mt-4">Dana Desa</div>
+        </div>
+        <div class="card-menu text-center">
+          <img
+            src="../../assets/illustrations/ilustration-web.png"
+            alt="illustration-web"
+          />
+          <div class="fw-bold fs-5 mt-4">GeoMeta</div>
+        </div>
+        <div class="card-menu text-center">
+          <img
+            src="../../assets/illustrations/ilustration-data.png"
+            alt="illustration-phone"
+          />
+          <div class="fw-bold fs-5 mt-4">Wilayah Administratif</div>
+        </div>
+        <div class="card-menu text-center">
+          <img
+            src="../../assets/illustrations/ilustration-human.png"
+            alt="illustration-human"
+          />
+          <div class="fw-bold fs-5 mt-4">Produk Hukum & Informasi Publik</div>
+        </div>
+        <div class="card-menu text-center">
+          <img
+            src="../../assets/illustrations/ilustration-card.png"
+            alt="illustration-card"
+          />
+          <div class="fw-bold fs-5 mt-4">Pembangunan</div>
+        </div>
+        <div class="card-menu text-center">
+          <img
+            src="../../assets/illustrations/ilustration-static.png"
+            alt="illustration-statistics"
+          />
+          <div class="fw-bold fs-5 mt-4">Lembaga & Kelompok</div>
+        </div>
+      </section>
+    </main>
+
+    <!-- All scripts that we will require -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+  </body>
+</html>
