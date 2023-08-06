@@ -4,6 +4,7 @@ section#hero div.card-nav-active {
   padding: 10px 20px;
   color: #1da1f2;
   border: 1px solid;
+  cursor: pointer;
 }
 
 section#hero div.card-nav {
@@ -11,4 +12,5 @@ section#hero div.card-nav {
   background: rgba(255, 255, 255, 0.25);
   padding: 10px 20px;
   color: #2f3739;
+  cursor: pointer;
 }

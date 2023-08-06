@@ -1,0 +1,15 @@
+section#transparansi div.custom-card-content {
+  background: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+}
+
+section#transparansi div.custom-card-content div.card-header {
+  background: #3c89a6;
+  border-radius: 8px 8px 0 0;
+}
+
+section#transparansi div.custom-card-content div.card-body {
+  border-radius: 0 0 8px 8px;
+  border-radius: 1px solid #c9c9c9;
+}

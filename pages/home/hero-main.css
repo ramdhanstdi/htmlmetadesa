@@ -10,6 +10,7 @@ section#hero div.card-nav-active {
   padding: 5px 20px;
   color: #1da1f2;
   border: 1px solid;
+  cursor: pointer;
 }
 
 section#hero div.card-nav {
@@ -17,6 +18,7 @@ section#hero div.card-nav {
   background: rgba(255, 255, 255, 0.25);
   padding: 5px 20px;
   color: #2f3739;
+  cursor: pointer;
 }
 
 section#hero section#content-hero {
@@ -41,7 +43,7 @@ section#hero div#left-content {
 }
 
 section#hero div#right-content {
-  margin-right: 26px;
+  margin-right: 50px;
 }
 
 section#hero section#content-hero div.card-sholat {
@@ -76,9 +78,115 @@ section#menu-selector div.card-menu {
   height: 200px;
   padding: 34px 10px 10px 10px;
   box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
-@media only screen and (max-width: 768px) {
+section#ktp div.left-content {
+  background: url("../../assets/images/bg-ktp.png") no-repeat;
+  padding-top: 73px;
+  margin-left: 22px;
+  margin-top: 32px;
+}
+
+section#ktp div.card-ktp {
+  background: url("../../assets/icons/bg-card-ktp.svg") no-repeat;
+  background-position: center top;
+  width: 150px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.25);
+}
+
+section#ktp {
+  background-color: #ecf8fd;
+}
+
+section#ktp div#right-content {
+  padding: 41px 38px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 24px 69px 0px 69px;
+}
+
+section#village {
+  margin: 0px 70px;
+}
+
+section#village div.head-card {
+  padding: 50px 36px;
+  border-radius: 15px;
+  background: var(--text-dark-color, #fff);
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.25);
+}
+
+section#village div.head-img {
+  width: 100%;
+}
+
+section#village div.right-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+section#video div.card-video {
+  border-radius: 20px;
+  background: var(--text-dark-color, #fff);
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.25);
+  display: flex;
+  width: 560px;
+  gap: 15px;
+  padding: 25px 20px;
+}
+
+section#video div.player-video {
+  width: 300px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+}
+
+section#article div.card-article {
+  width: 384px;
+  height: 350px;
+  border-radius: 15px;
+  background: var(--text-dark-color, #fff);
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+section#article div.date {
+  font-size: 16px;
+}
+
+section#article div.title {
+  font-size: 20px;
+}
+
+section#article div.img img {
+  height: 235px;
+  object-fit: cover;
+}
+
+section#transparansi div.custom-card-content {
+  background: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+}
+
+section#transparansi div.custom-card-content div.card-header {
+  background: #3c89a6;
+  border-radius: 8px 8px 0 0;
+}
+
+section#transparansi div.custom-card-content div.card-body {
+  border-radius: 0 0 8px 8px;
+  border-radius: 1px solid #c9c9c9;
+}
+
+@media only screen and (max-width: 769px) {
   section#hero section#content-hero div.title-head {
     font-family: Roboto;
     font-size: 30px;
@@ -127,6 +235,74 @@ section#menu-selector div.card-menu {
     padding: 20px 10px 10px 10px;
     width: 180px;
     box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  }
+
+  section#ktp div.left-content {
+    background: url("../../assets/images/bg-ktp.png") no-repeat;
+    padding-top: 73px;
+    margin-left: 0px;
+    margin-top: 32px;
+  }
+
+  section#village {
+    margin: 0px 20px;
+  }
+
+  section#village div.head-card {
+    padding: 16px 20px;
+    border-radius: 15px;
+    background: var(--text-dark-color, #fff);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.25);
+  }
+
+  section#village img.head-img {
+    max-width: 150px;
+  }
+
+  section#village div.right-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  section#video div.card-video {
+    border-radius: 20px;
+    background: var(--text-dark-color, #fff);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.25);
+    display: block;
+    width: 300px;
+    gap: 15px;
+    padding: 25px 20px;
+  }
+
+  section#video div.player-video {
+    width: 250px;
+    display: flex;
+    align-items: center;
+  }
+
+  section#article div.card-article {
+    width: 190px;
+    height: 350px;
+    border-radius: 15px;
+    background: var(--text-dark-color, #fff);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  section#article div.img img {
+    height: 235px;
+    object-fit: cover;
+  }
+
+  section#article div.date {
+    font-size: 12px;
+  }
+
+  section#article div.title {
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 426px) {
@@ -146,16 +322,68 @@ section#menu-selector div.card-menu {
     background: #fff;
     padding: 10px 10px;
     box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
   }
 
   section#hero div#left-content {
     max-width: 350px;
   }
+
+  section#ktp div.left-content {
+    background: url("../../assets/images/bg-ktp.png") no-repeat;
+    padding-top: 73px;
+    margin-left: 0px;
+    margin-top: 32px;
+  }
+
+  section#video div.card-video {
+    border-radius: 20px;
+    background: var(--text-dark-color, #fff);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.25);
+    display: block;
+    width: 150px;
+    gap: 5px;
+    padding: 15px 10px;
+  }
+
+  section#video div.player-video {
+    width: 120px;
+    display: flex;
+    align-items: center;
+  }
+
+  section#article div.card-article {
+    width: 120px;
+    height: 300px;
+    border-radius: 15px;
+    background: var(--text-dark-color, #fff);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  section#article div.img img {
+    height: 150px;
+    object-fit: cover;
+  }
+
+  section#article div.date {
+    font-size: 12px;
+  }
+
+  section#article div.title {
+    font-size: 14px;
+  }
 }
 
-swiper-container {
+section#hero swiper-container {
   width: 240px;
   height: 320px;
+}
+
+section#video swiper-container {
+  width: 100%;
+  height: 100%;
 }
 
 swiper-slide {
