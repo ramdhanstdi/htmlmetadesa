@@ -18,8 +18,12 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 .font-helvetica-neue {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .font-roboto {
@@ -99,6 +103,10 @@
 
 .vertical-align-middle {
   vertical-align: middle;
+}
+
+.translate-middle {
+  transform: translate(-50%, -50%);
 }
 
 nav div.nav-items div.nav-item {
