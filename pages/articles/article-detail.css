@@ -21,7 +21,6 @@ div.swiper-wrapper div.swiper-slide h1 {
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
-  line-height: 21px;
 }
 
 main section#hero div.swiper-button-next {
@@ -89,4 +88,10 @@ section#article-content section#content .content {
 
 section#article-content button.btn-submit {
   background: linear-gradient(to right, #4158e6, #a568e0) !important;
+}
+
+@media only screen and (max-width: 769px) {
+  div.swiper-wrapper div.swiper-slide div.box-content {
+    gap: 10px;
+  }
 }
