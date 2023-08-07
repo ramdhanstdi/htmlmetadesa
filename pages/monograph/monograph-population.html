@@ -28,46 +28,34 @@
           <img src="../../assets/icons/icon-menus.svg" alt="menu-icon" />
 
           <div
-            class="nav-items d-flex align-content-center gap-4 h-fit-content"
+            class="nav-items d-md-flex align-content-center gap-4 h-fit-content"
           >
             <div
-              class="nav-item w-fit-content h-fit-content d-flex align-items-center gap-1 py-2 px-4"
+              class="nav-item w-fit-content h-fit-content d-flex gap-2 card-nav"
             >
-              <img src="../../assets/icons/icon-home.svg" alt="icon-home" />
-
-              <p class="font-roboto fw-bold fs-5 text-black mb-0">Beranda</p>
+              <img src="../../assets/icons/icon-home.svg" alt="home-icon" />
+              <div class="fs-5 fw-bold">Home</div>
             </div>
             <div
-              class="nav-item nav-active w-fit-content h-fit-content d-flex align-items-center gap-2 py-2 px-3"
+              class="nav-item w-fit-content h-fit-content d-flex gap-2 card-nav-active"
             >
               <img
                 src="../../assets/icons/icon-monograph-active.svg"
-                alt="icon-monograph"
+                alt="monograph-icon"
               />
-
-              <p class="font-roboto fw-bold fs-5 text-primary mb-0">
-                Monografi
-              </p>
+              <div class="fs-5 fw-bold">Monografi</div>
             </div>
             <div
-              class="nav-item w-fit-content h-fit-content d-flex align-items-center gap-1 py-2 px-4"
+              class="nav-item w-fit-content h-fit-content d-flex gap-2 card-nav"
             >
-              <img
-                src="../../assets/icons/icon-statistics.svg"
-                alt="icon-statistics"
-              />
-
-              <p class="font-roboto fw-bold fs-5 text-black mb-0">Statistik</p>
+              <img src="../../assets/icons/icon-statistic.svg" alt="" />
+              <div class="fs-5 fw-bold">Statistik</div>
             </div>
             <div
-              class="nav-item w-fit-content h-fit-content d-flex align-items-center gap-1 py-2 px-4"
+              class="nav-item w-fit-content h-fit-content d-flex gap-2 card-nav"
             >
-              <img
-                src="../../assets/icons/icon-articles.svg"
-                alt="icon-articles"
-              />
-
-              <p class="font-roboto fw-bold fs-5 text-black mb-0">Artikel</p>
+              <img src="../../assets/icons/icon-article.svg" alt="" />
+              <div class="fs-5 fw-bold">Artikel</div>
             </div>
           </div>
 
@@ -77,11 +65,11 @@
 
         <section
           id="monograph-population"
-          class="container-fluid d-flex gap-4 w-100"
+          class="container-fluid d-flex flex-column flex-md-row gap-4 w-100"
         >
           <section
             id="sidebar-menu"
-            class="d-flex flex-column align-items-center px-1 pt-4 pb-5 h-fit-content"
+            class="d-flex flex-md-column justify-content-center align-items-center px-1 pt-4 pb-5 h-fit-content"
           >
             <img
               src="../../assets/icons/icon-discovery.svg"
@@ -103,7 +91,7 @@
 
           <section
             id="content"
-            class="d-flex flex-column align-items-center w-90 p-4 gap-4 mb-5"
+            class="d-flex flex-column align-items-center w-100 p-4 gap-4 mb-5"
           >
             <section id="population-content" class="w-100">
               <div class="d-flex flex-column align-items-center">
@@ -403,174 +391,176 @@
                 </div>
               </div>
 
-              <table class="table table-striped table-bordered">
-                <thead>
-                  <tr style="background-color: #d3d6dd">
-                    <th
-                      scope="col"
-                      class="text-black-secondary font-roboto fw-semibold text-center fs-6 text-uppercase"
-                    >
-                      No
-                    </th>
-                    <th
-                      scope="col"
-                      style="color: #528bb8"
-                      class="font-roboto fw-semibold text-center fs-6 text-uppercase position-relative top-0 start-0 end-0"
-                    >
-                      Jenis Kelompok
+              <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                  <thead>
+                    <tr style="background-color: #d3d6dd">
+                      <th
+                        scope="col"
+                        class="text-black-secondary font-roboto fw-semibold text-center fs-6 text-uppercase"
+                      >
+                        No
+                      </th>
+                      <th
+                        scope="col"
+                        style="color: #528bb8"
+                        class="font-roboto fw-semibold text-center fs-6 text-uppercase position-relative top-0 start-0 end-0"
+                      >
+                        Jenis Kelompok
 
-                      <img
-                        src="../../assets/icons/icon-sort.svg"
-                        alt="icon-sort"
-                        width="18"
-                        height="18"
-                        class="position-absolute ml-1 top-50 translate-middle-y"
-                      />
-                    </th>
-                    <th
-                      scope="col"
-                      colspan="2"
-                      style="color: #528bb8"
-                      class="font-roboto fw-semibold text-center fs-6 text-uppercase position-relative top-0 start-0 end-0"
-                    >
-                      Jumlah
+                        <img
+                          src="../../assets/icons/icon-sort.svg"
+                          alt="icon-sort"
+                          width="18"
+                          height="18"
+                          class="position-absolute ml-1 top-50 translate-middle-y"
+                        />
+                      </th>
+                      <th
+                        scope="col"
+                        colspan="2"
+                        style="color: #528bb8"
+                        class="font-roboto fw-semibold text-center fs-6 text-uppercase position-relative top-0 start-0 end-0"
+                      >
+                        Jumlah
 
-                      <img
-                        src="../../assets/icons/icon-sort.svg"
-                        alt="icon-sort"
-                        width="18"
-                        height="18"
-                        class="position-absolute ml-1 top-50 translate-middle-y"
-                      />
-                    </th>
-                    <th
-                      scope="col"
-                      colspan="2"
-                      style="color: #528bb8"
-                      class="font-roboto fw-semibold text-center fs-6 text-uppercase position-relative top-0 start-0 end-0"
-                    >
-                      Laki-Laki
+                        <img
+                          src="../../assets/icons/icon-sort.svg"
+                          alt="icon-sort"
+                          width="18"
+                          height="18"
+                          class="position-absolute ml-1 top-50 translate-middle-y"
+                        />
+                      </th>
+                      <th
+                        scope="col"
+                        colspan="2"
+                        style="color: #528bb8"
+                        class="font-roboto fw-semibold text-center fs-6 text-uppercase position-relative top-0 start-0 end-0"
+                      >
+                        Laki-Laki
 
-                      <img
-                        src="../../assets/icons/icon-sort.svg"
-                        alt="icon-sort"
-                        width="18"
-                        height="18"
-                        class="position-absolute ml-1 top-50 translate-middle-y"
-                      />
-                    </th>
-                    <th
-                      scope="col"
-                      colspan="2"
-                      style="color: #528bb8"
-                      class="font-roboto fw-semibold text-center fs-6 text-uppercase position-relative top-0 start-0 end-0"
-                    >
-                      Perempuan
+                        <img
+                          src="../../assets/icons/icon-sort.svg"
+                          alt="icon-sort"
+                          width="18"
+                          height="18"
+                          class="position-absolute ml-1 top-50 translate-middle-y"
+                        />
+                      </th>
+                      <th
+                        scope="col"
+                        colspan="2"
+                        style="color: #528bb8"
+                        class="font-roboto fw-semibold text-center fs-6 text-uppercase position-relative top-0 start-0 end-0"
+                      >
+                        Perempuan
 
-                      <img
-                        src="../../assets/icons/icon-sort.svg"
-                        alt="icon-sort"
-                        width="18"
-                        height="18"
-                        class="position-absolute ml-1 top-50 translate-middle-y"
-                      />
-                    </th>
-                  </tr>
-                </thead>
+                        <img
+                          src="../../assets/icons/icon-sort.svg"
+                          alt="icon-sort"
+                          width="18"
+                          height="18"
+                          class="position-absolute ml-1 top-50 translate-middle-y"
+                        />
+                      </th>
+                    </tr>
+                  </thead>
 
-                <tbody>
-                  <tr class="vertical-align-middle">
-                    <td
-                      class="text-black-secondary font-roboto fs-6 text-uppercase"
-                    >
-                      1
-                    </td>
-                    <td
-                      class="text-black-secondary font-roboto fs-6 text-uppercase"
-                    >
-                      Belum/Tidak Bekerja
-                    </td>
-                    <td
-                      style="color: #528bb8"
-                      class="font-roboto fs-6 text-uppercase"
-                    >
-                      19
-                    </td>
-                    <td
-                      class="text-black-secondary font-roboto fs-6 text-uppercase ps-1 text-end"
-                    >
-                      19,79%
-                    </td>
-                    <td
-                      style="color: #528bb8"
-                      class="font-roboto fs-6 text-uppercase"
-                    >
-                      7
-                    </td>
-                    <td
-                      class="text-black-secondary font-roboto fs-6 text-uppercase ps-1 text-end"
-                    >
-                      7,29%
-                    </td>
-                    <td
-                      style="color: #528bb8"
-                      class="font-roboto fs-6 text-uppercase"
-                    >
-                      7
-                    </td>
-                    <td
-                      class="text-black-secondary font-roboto fs-6 text-uppercase ps-1 text-end"
-                    >
-                      12,50%
-                    </td>
-                  </tr>
-                  <tr class="vertical-align-middle">
-                    <td
-                      class="text-black-secondary font-roboto fs-6 text-uppercase"
-                    >
-                      2
-                    </td>
-                    <td
-                      class="text-black-secondary font-roboto fs-6 text-uppercase"
-                    >
-                      Mengurus Rumah Tangga
-                    </td>
-                    <td
-                      style="color: #528bb8"
-                      class="font-roboto fs-6 text-uppercase"
-                    >
-                      18
-                    </td>
-                    <td
-                      class="text-black-secondary font-roboto fs-6 text-uppercase ps-1 text-end"
-                    >
-                      18,75%
-                    </td>
-                    <td
-                      style="color: #528bb8"
-                      class="font-roboto fs-6 text-uppercase"
-                    >
-                      2
-                    </td>
-                    <td
-                      class="text-black-secondary font-roboto fs-6 text-uppercase ps-1 text-end"
-                    >
-                      2,08%
-                    </td>
-                    <td
-                      style="color: #528bb8"
-                      class="font-roboto fs-6 text-uppercase"
-                    >
-                      16
-                    </td>
-                    <td
-                      class="text-black-secondary font-roboto fs-6 text-uppercase ps-1 text-end"
-                    >
-                      16,67%
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                  <tbody>
+                    <tr class="vertical-align-middle">
+                      <td
+                        class="text-black-secondary font-roboto fs-6 text-uppercase"
+                      >
+                        1
+                      </td>
+                      <td
+                        class="text-black-secondary font-roboto fs-6 text-uppercase"
+                      >
+                        Belum/Tidak Bekerja
+                      </td>
+                      <td
+                        style="color: #528bb8"
+                        class="font-roboto fs-6 text-uppercase"
+                      >
+                        19
+                      </td>
+                      <td
+                        class="text-black-secondary font-roboto fs-6 text-uppercase ps-1 text-end"
+                      >
+                        19,79%
+                      </td>
+                      <td
+                        style="color: #528bb8"
+                        class="font-roboto fs-6 text-uppercase"
+                      >
+                        7
+                      </td>
+                      <td
+                        class="text-black-secondary font-roboto fs-6 text-uppercase ps-1 text-end"
+                      >
+                        7,29%
+                      </td>
+                      <td
+                        style="color: #528bb8"
+                        class="font-roboto fs-6 text-uppercase"
+                      >
+                        7
+                      </td>
+                      <td
+                        class="text-black-secondary font-roboto fs-6 text-uppercase ps-1 text-end"
+                      >
+                        12,50%
+                      </td>
+                    </tr>
+                    <tr class="vertical-align-middle">
+                      <td
+                        class="text-black-secondary font-roboto fs-6 text-uppercase"
+                      >
+                        2
+                      </td>
+                      <td
+                        class="text-black-secondary font-roboto fs-6 text-uppercase"
+                      >
+                        Mengurus Rumah Tangga
+                      </td>
+                      <td
+                        style="color: #528bb8"
+                        class="font-roboto fs-6 text-uppercase"
+                      >
+                        18
+                      </td>
+                      <td
+                        class="text-black-secondary font-roboto fs-6 text-uppercase ps-1 text-end"
+                      >
+                        18,75%
+                      </td>
+                      <td
+                        style="color: #528bb8"
+                        class="font-roboto fs-6 text-uppercase"
+                      >
+                        2
+                      </td>
+                      <td
+                        class="text-black-secondary font-roboto fs-6 text-uppercase ps-1 text-end"
+                      >
+                        2,08%
+                      </td>
+                      <td
+                        style="color: #528bb8"
+                        class="font-roboto fs-6 text-uppercase"
+                      >
+                        16
+                      </td>
+                      <td
+                        class="text-black-secondary font-roboto fs-6 text-uppercase ps-1 text-end"
+                      >
+                        16,67%
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
 
               <section
                 id="pagination"
@@ -614,174 +604,176 @@
                 </div>
               </div>
 
-              <table class="table table-striped table-bordered">
-                <thead>
-                  <tr style="background-color: #d3d6dd">
-                    <th
-                      scope="col"
-                      class="text-black-secondary font-roboto fw-semibold text-center fs-6 text-uppercase"
-                    >
-                      No
-                    </th>
-                    <th
-                      scope="col"
-                      style="color: #528bb8"
-                      class="font-roboto fw-semibold text-center fs-6 text-uppercase position-relative top-0 start-0 end-0"
-                    >
-                      Jenis Kelompok
+              <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                  <thead>
+                    <tr style="background-color: #d3d6dd">
+                      <th
+                        scope="col"
+                        class="text-black-secondary font-roboto fw-semibold text-center fs-6 text-uppercase"
+                      >
+                        No
+                      </th>
+                      <th
+                        scope="col"
+                        style="color: #528bb8"
+                        class="font-roboto fw-semibold text-center fs-6 text-uppercase position-relative top-0 start-0 end-0"
+                      >
+                        Jenis Kelompok
 
-                      <img
-                        src="../../assets/icons/icon-sort.svg"
-                        alt="icon-sort"
-                        width="18"
-                        height="18"
-                        class="position-absolute ml-1 top-50 translate-middle-y"
-                      />
-                    </th>
-                    <th
-                      scope="col"
-                      colspan="2"
-                      style="color: #528bb8"
-                      class="font-roboto fw-semibold text-center fs-6 text-uppercase position-relative top-0 start-0 end-0"
-                    >
-                      Jumlah
+                        <img
+                          src="../../assets/icons/icon-sort.svg"
+                          alt="icon-sort"
+                          width="18"
+                          height="18"
+                          class="position-absolute ml-1 top-50 translate-middle-y"
+                        />
+                      </th>
+                      <th
+                        scope="col"
+                        colspan="2"
+                        style="color: #528bb8"
+                        class="font-roboto fw-semibold text-center fs-6 text-uppercase position-relative top-0 start-0 end-0"
+                      >
+                        Jumlah
 
-                      <img
-                        src="../../assets/icons/icon-sort.svg"
-                        alt="icon-sort"
-                        width="18"
-                        height="18"
-                        class="position-absolute ml-1 top-50 translate-middle-y"
-                      />
-                    </th>
-                    <th
-                      scope="col"
-                      colspan="2"
-                      style="color: #528bb8"
-                      class="font-roboto fw-semibold text-center fs-6 text-uppercase position-relative top-0 start-0 end-0"
-                    >
-                      Laki-Laki
+                        <img
+                          src="../../assets/icons/icon-sort.svg"
+                          alt="icon-sort"
+                          width="18"
+                          height="18"
+                          class="position-absolute ml-1 top-50 translate-middle-y"
+                        />
+                      </th>
+                      <th
+                        scope="col"
+                        colspan="2"
+                        style="color: #528bb8"
+                        class="font-roboto fw-semibold text-center fs-6 text-uppercase position-relative top-0 start-0 end-0"
+                      >
+                        Laki-Laki
 
-                      <img
-                        src="../../assets/icons/icon-sort.svg"
-                        alt="icon-sort"
-                        width="18"
-                        height="18"
-                        class="position-absolute ml-1 top-50 translate-middle-y"
-                      />
-                    </th>
-                    <th
-                      scope="col"
-                      colspan="2"
-                      style="color: #528bb8"
-                      class="font-roboto fw-semibold text-center fs-6 text-uppercase position-relative top-0 start-0 end-0"
-                    >
-                      Perempuan
+                        <img
+                          src="../../assets/icons/icon-sort.svg"
+                          alt="icon-sort"
+                          width="18"
+                          height="18"
+                          class="position-absolute ml-1 top-50 translate-middle-y"
+                        />
+                      </th>
+                      <th
+                        scope="col"
+                        colspan="2"
+                        style="color: #528bb8"
+                        class="font-roboto fw-semibold text-center fs-6 text-uppercase position-relative top-0 start-0 end-0"
+                      >
+                        Perempuan
 
-                      <img
-                        src="../../assets/icons/icon-sort.svg"
-                        alt="icon-sort"
-                        width="18"
-                        height="18"
-                        class="position-absolute ml-1 top-50 translate-middle-y"
-                      />
-                    </th>
-                  </tr>
-                </thead>
+                        <img
+                          src="../../assets/icons/icon-sort.svg"
+                          alt="icon-sort"
+                          width="18"
+                          height="18"
+                          class="position-absolute ml-1 top-50 translate-middle-y"
+                        />
+                      </th>
+                    </tr>
+                  </thead>
 
-                <tbody>
-                  <tr class="vertical-align-middle">
-                    <td
-                      class="text-black-secondary font-roboto fs-6 text-uppercase"
-                    >
-                      1
-                    </td>
-                    <td
-                      class="text-black-secondary font-roboto fs-6 text-uppercase"
-                    >
-                      Tidak/Belum Sekolah
-                    </td>
-                    <td
-                      style="color: #528bb8"
-                      class="font-roboto fs-6 text-uppercase"
-                    >
-                      21
-                    </td>
-                    <td
-                      class="text-black-secondary font-roboto fs-6 text-uppercase ps-1 text-end"
-                    >
-                      21,88%
-                    </td>
-                    <td
-                      style="color: #528bb8"
-                      class="font-roboto fs-6 text-uppercase"
-                    >
-                      8
-                    </td>
-                    <td
-                      class="text-black-secondary font-roboto fs-6 text-uppercase ps-1 text-end"
-                    >
-                      8,33%
-                    </td>
-                    <td
-                      style="color: #528bb8"
-                      class="font-roboto fs-6 text-uppercase"
-                    >
-                      13
-                    </td>
-                    <td
-                      class="text-black-secondary font-roboto fs-6 text-uppercase ps-1 text-end"
-                    >
-                      13,54%
-                    </td>
-                  </tr>
-                  <tr class="vertical-align-middle">
-                    <td
-                      class="text-black-secondary font-roboto fs-6 text-uppercase"
-                    >
-                      2
-                    </td>
-                    <td
-                      class="text-black-secondary font-roboto fs-6 text-uppercase"
-                    >
-                      Belum Tamat Sd/Sederajat
-                    </td>
-                    <td
-                      style="color: #528bb8"
-                      class="font-roboto fs-6 text-uppercase"
-                    >
-                      4
-                    </td>
-                    <td
-                      class="text-black-secondary font-roboto fs-6 text-uppercase ps-1 text-end"
-                    >
-                      4,17%
-                    </td>
-                    <td
-                      style="color: #528bb8"
-                      class="font-roboto fs-6 text-uppercase"
-                    >
-                      2
-                    </td>
-                    <td
-                      class="text-black-secondary font-roboto fs-6 text-uppercase ps-1 text-end"
-                    >
-                      2,08%
-                    </td>
-                    <td
-                      style="color: #528bb8"
-                      class="font-roboto fs-6 text-uppercase"
-                    >
-                      2
-                    </td>
-                    <td
-                      class="text-black-secondary font-roboto fs-6 text-uppercase ps-1 text-end"
-                    >
-                      2,08%
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                  <tbody>
+                    <tr class="vertical-align-middle">
+                      <td
+                        class="text-black-secondary font-roboto fs-6 text-uppercase"
+                      >
+                        1
+                      </td>
+                      <td
+                        class="text-black-secondary font-roboto fs-6 text-uppercase"
+                      >
+                        Tidak/Belum Sekolah
+                      </td>
+                      <td
+                        style="color: #528bb8"
+                        class="font-roboto fs-6 text-uppercase"
+                      >
+                        21
+                      </td>
+                      <td
+                        class="text-black-secondary font-roboto fs-6 text-uppercase ps-1 text-end"
+                      >
+                        21,88%
+                      </td>
+                      <td
+                        style="color: #528bb8"
+                        class="font-roboto fs-6 text-uppercase"
+                      >
+                        8
+                      </td>
+                      <td
+                        class="text-black-secondary font-roboto fs-6 text-uppercase ps-1 text-end"
+                      >
+                        8,33%
+                      </td>
+                      <td
+                        style="color: #528bb8"
+                        class="font-roboto fs-6 text-uppercase"
+                      >
+                        13
+                      </td>
+                      <td
+                        class="text-black-secondary font-roboto fs-6 text-uppercase ps-1 text-end"
+                      >
+                        13,54%
+                      </td>
+                    </tr>
+                    <tr class="vertical-align-middle">
+                      <td
+                        class="text-black-secondary font-roboto fs-6 text-uppercase"
+                      >
+                        2
+                      </td>
+                      <td
+                        class="text-black-secondary font-roboto fs-6 text-uppercase"
+                      >
+                        Belum Tamat Sd/Sederajat
+                      </td>
+                      <td
+                        style="color: #528bb8"
+                        class="font-roboto fs-6 text-uppercase"
+                      >
+                        4
+                      </td>
+                      <td
+                        class="text-black-secondary font-roboto fs-6 text-uppercase ps-1 text-end"
+                      >
+                        4,17%
+                      </td>
+                      <td
+                        style="color: #528bb8"
+                        class="font-roboto fs-6 text-uppercase"
+                      >
+                        2
+                      </td>
+                      <td
+                        class="text-black-secondary font-roboto fs-6 text-uppercase ps-1 text-end"
+                      >
+                        2,08%
+                      </td>
+                      <td
+                        style="color: #528bb8"
+                        class="font-roboto fs-6 text-uppercase"
+                      >
+                        2
+                      </td>
+                      <td
+                        class="text-black-secondary font-roboto fs-6 text-uppercase ps-1 text-end"
+                      >
+                        2,08%
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </section>
 
             <section id="help-data" class="d-flex flex-column gap-4 mt-5 w-100">
@@ -793,103 +785,105 @@
                 </div>
               </div>
 
-              <table class="table table-striped table-bordered">
-                <thead>
-                  <tr style="background-color: #d3d6dd">
-                    <th
-                      scope="col"
-                      class="text-black-secondary font-roboto fw-semibold text-center fs-6 text-uppercase"
-                    >
-                      No
-                    </th>
-                    <th
-                      scope="col"
-                      class="text-black-secondary font-roboto fw-semibold text-center fs-6 text-uppercase position-relative top-0 start-0 end-0"
-                    >
-                      Nama Program
+              <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                  <thead>
+                    <tr style="background-color: #d3d6dd">
+                      <th
+                        scope="col"
+                        class="text-black-secondary font-roboto fw-semibold text-center fs-6 text-uppercase"
+                      >
+                        No
+                      </th>
+                      <th
+                        scope="col"
+                        class="text-black-secondary font-roboto fw-semibold text-center fs-6 text-uppercase position-relative top-0 start-0 end-0"
+                      >
+                        Nama Program
 
-                      <img
-                        src="../../assets/icons/icon-sort.svg"
-                        alt="icon-sort"
-                        width="18"
-                        height="18"
-                        class="position-absolute ml-1 top-50 translate-middle-y"
-                      />
-                    </th>
-                    <th
-                      scope="col"
-                      class="text-black-secondary font-roboto fw-semibold text-center fs-6 text-uppercase"
-                    >
-                      Asal Dana
-                    </th>
-                    <th
-                      scope="col"
-                      class="text-black-secondary font-roboto fw-semibold text-center fs-6 text-uppercase"
-                    >
-                      Jumlah Peserta
-                    </th>
-                    <th
-                      scope="col"
-                      class="text-black-secondary font-roboto fw-semibold text-center fs-6 text-uppercase"
-                    >
-                      Masa Berlaku
-                    </th>
-                    <th
-                      scope="col"
-                      class="text-black-secondary font-roboto fw-semibold text-center fs-6 text-uppercase"
-                    >
-                      Sasaran
-                    </th>
-                    <th
-                      scope="col"
-                      class="text-black-secondary font-roboto fw-semibold text-center fs-6 text-uppercase"
-                    >
-                      Status
-                    </th>
-                  </tr>
-                </thead>
+                        <img
+                          src="../../assets/icons/icon-sort.svg"
+                          alt="icon-sort"
+                          width="18"
+                          height="18"
+                          class="position-absolute ml-1 top-50 translate-middle-y"
+                        />
+                      </th>
+                      <th
+                        scope="col"
+                        class="text-black-secondary font-roboto fw-semibold text-center fs-6 text-uppercase"
+                      >
+                        Asal Dana
+                      </th>
+                      <th
+                        scope="col"
+                        class="text-black-secondary font-roboto fw-semibold text-center fs-6 text-uppercase"
+                      >
+                        Jumlah Peserta
+                      </th>
+                      <th
+                        scope="col"
+                        class="text-black-secondary font-roboto fw-semibold text-center fs-6 text-uppercase"
+                      >
+                        Masa Berlaku
+                      </th>
+                      <th
+                        scope="col"
+                        class="text-black-secondary font-roboto fw-semibold text-center fs-6 text-uppercase"
+                      >
+                        Sasaran
+                      </th>
+                      <th
+                        scope="col"
+                        class="text-black-secondary font-roboto fw-semibold text-center fs-6 text-uppercase"
+                      >
+                        Status
+                      </th>
+                    </tr>
+                  </thead>
 
-                <tbody>
-                  <tr class="vertical-align-middle">
-                    <td
-                      class="text-black-secondary font-roboto fs-6 text-uppercase text-center"
-                    >
-                      1
-                    </td>
-                    <td
-                      style="color: #528bb8"
-                      class="font-roboto fs-6 text-center"
-                    >
-                      BPNT
-                    </td>
-                    <td
-                      class="text-black-secondary font-roboto fs-6 text-center"
-                    >
-                      Pusat
-                    </td>
-                    <td
-                      class="text-black-secondary font-roboto fs-6 text-center"
-                    >
-                      0
-                    </td>
-                    <td
-                      class="text-black-secondary font-roboto fs-6 text-center"
-                    >
-                      13 Dec 2015 - 13 Dec 2022
-                    </td>
-                    <td
-                      class="text-black-secondary font-roboto fs-6 text-center"
-                    >
-                      Keluarga/KK
-                    </td>
-                    <td
-                      class="text-black-secondary font-roboto fs-6 text-center"
-                    >
-                      Tidak Aktif
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                  <tbody>
+                    <tr class="vertical-align-middle">
+                      <td
+                        class="text-black-secondary font-roboto fs-6 text-uppercase text-center"
+                      >
+                        1
+                      </td>
+                      <td
+                        style="color: #528bb8"
+                        class="font-roboto fs-6 text-center"
+                      >
+                        BPNT
+                      </td>
+                      <td
+                        class="text-black-secondary font-roboto fs-6 text-center"
+                      >
+                        Pusat
+                      </td>
+                      <td
+                        class="text-black-secondary font-roboto fs-6 text-center"
+                      >
+                        0
+                      </td>
+                      <td
+                        class="text-black-secondary font-roboto fs-6 text-center"
+                      >
+                        13 Dec 2015 - 13 Dec 2022
+                      </td>
+                      <td
+                        class="text-black-secondary font-roboto fs-6 text-center"
+                      >
+                        Keluarga/KK
+                      </td>
+                      <td
+                        class="text-black-secondary font-roboto fs-6 text-center"
+                      >
+                        Tidak Aktif
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </section>
           </section>
         </section>

@@ -9,6 +9,23 @@ section#main section#hero {
   background-size: 100%;
 }
 
+section#hero div.card-nav-active {
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 10px 20px;
+  color: #1da1f2;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+section#hero div.card-nav {
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 10px 20px;
+  color: #2f3739;
+  cursor: pointer;
+}
+
 section#hero section#sidebar-menu {
   border-radius: 45px;
   background: rgba(255, 255, 255, 0.75);
