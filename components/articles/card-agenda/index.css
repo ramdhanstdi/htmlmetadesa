@@ -1,0 +1,8 @@
+section#list-articles div.box-number {
+  background: #71c4d6;
+  width: 50px;
+}
+
+section#list-articles div.box-information {
+  background: #f1f1f1;
+}

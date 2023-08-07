@@ -21,7 +21,6 @@ div.swiper-wrapper div.swiper-slide h1 {
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
-  line-height: 21px;
 }
 
 main section#hero div.swiper-button-next {
@@ -103,4 +102,10 @@ section#list-articles div.box-information {
 
     padding: 34px 8px;
   } */
+}
+
+@media only screen and (max-width: 769px) {
+  div.swiper-wrapper div.swiper-slide div.box-content {
+    gap: 10px;
+  }
 }

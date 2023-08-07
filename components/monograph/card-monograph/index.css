@@ -1,0 +1,16 @@
+section#content section#facilities-infrastructures div.custom-card-gradient {
+  border-radius: 20px;
+  background: url("../../assets/images/bg-custom-radial.png") no-repeat;
+  background-size: cover;
+}
+
+section#facilities-infrastructures div.custom-card-gradient div.custom-card {
+  border-radius: 10px;
+  border: 1px solid #1da1f2;
+}
+
+@media only screen and (min-width: 1024px) {
+  section#hero section#monograph-population div.custom-card {
+    padding: 16px;
+  }
+}

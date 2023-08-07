@@ -21,7 +21,6 @@ div.swiper-wrapper div.swiper-slide h1 {
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
-  line-height: 21px;
 }
 
 main section#hero div.swiper-button-next {
@@ -167,6 +166,10 @@ section#all-list div.card-box {
   section#popular div.list-card div.img img {
     width: 150px;
     object-fit: cover;
+  }
+
+  div.swiper-wrapper div.swiper-slide div.box-content {
+    gap: 10px;
   }
 }
 
