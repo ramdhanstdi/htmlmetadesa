@@ -41,7 +41,55 @@ section#statistics-village-market div.custom-card-book a.btn-checkout {
   background: linear-gradient(to right, #4158e6, #a568e0) !important;
 }
 
-@media only screen and (min-width: 1024px) {
+section#hero section#village-statistics div.custom-card {
+  width: 180px;
+  height: 180px;
+
+  padding: 16px;
+}
+
+section#hero section#village-statistics div.custom-card img {
+  width: 80px;
+  height: 80px;
+}
+
+@media only screen and (min-width: 460px) {
+  section#hero section#content div.custom-card {
+    padding: 50px 30px 30px;
+  }
+
+  section#hero section#village-statistics div.custom-card {
+    width: 180px;
+    height: 180px;
+
+    padding: 34px 8px;
+  }
+
+  section#hero section#village-statistics div.custom-card img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  section#hero section#content div.custom-card {
+    padding: 50px 30px 30px;
+  }
+
+  section#hero section#village-statistics div.custom-card {
+    width: 180px;
+    height: 180px;
+
+    padding: 34px 8px;
+  }
+
+  section#hero section#village-statistics div.custom-card img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
   section#hero section#content div.custom-card {
     padding: 50px 68px 30px;
   }
@@ -49,6 +97,7 @@ section#statistics-village-market div.custom-card-book a.btn-checkout {
   section#hero section#village-statistics div.custom-card {
     width: 235px;
     height: 235px;
+
     padding: 34px 8px;
   }
 }
