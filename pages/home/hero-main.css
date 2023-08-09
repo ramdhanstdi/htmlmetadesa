@@ -65,7 +65,7 @@ div#running-text {
 }
 
 section#menu-selector {
-  margin: auto;
+  margin: 80px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 30px;

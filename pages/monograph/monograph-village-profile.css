@@ -63,6 +63,8 @@ section#content section#right-content div.custom-card-gradient {
   border-radius: 20px;
   background: url("../../assets/images/bg-custom-radial.png") no-repeat;
   background-size: cover;
+  background-blend-mode: overlay, normal;
+  backdrop-filter: blur(40px);
 }
 
 section#right-content div.custom-card-gradient div.card-header div.divider {

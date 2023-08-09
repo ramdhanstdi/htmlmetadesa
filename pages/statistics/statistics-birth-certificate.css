@@ -41,6 +41,30 @@ section#statistics-birth-certificate section#data-table div.heading h4 {
   margin-bottom: 0;
 }
 
+.data {
+  padding-top: 7rem;
+}
+
+.header-data h2 {
+  margin-top: 20px;
+}
+
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
+
+.header-tabel {
+  margin-top: 100px;
+}
+
+.horizontal-line {
+  width: 276px;
+  height: 3px;
+  background-color: #069740;
+  margin: 10px auto;
+}
+
 section#hero section#village-statistics div.custom-card {
   width: 180px;
   height: 180px;
