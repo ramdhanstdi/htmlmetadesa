@@ -192,6 +192,19 @@ section#transparansi div.custom-card-content div.card-body {
   border-radius: 0 0 30px 30px;
   border-radius: 1px solid #c9c9c9;
 }
+
+.card-title-ta {
+  margin-top: 10px;
+  color: #1da1f2;
+}
+
+.horizontal-line-card {
+  width: 162px;
+  height: 3px;
+  background-color: #000000;
+  margin: 10px auto;
+}
+
 @media only screen and (max-width: 1024px) {
   section#menu-selector {
     margin: 20px 20px 10px 20px;
