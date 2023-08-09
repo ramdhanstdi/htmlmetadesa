@@ -65,7 +65,7 @@ div#running-text {
 }
 
 section#menu-selector {
-  margin: 20px 81px 43px 81px;
+  margin: auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 30px;
@@ -173,20 +173,64 @@ section#article div.img img {
 section#transparansi div.custom-card-content {
   background: #fff;
   border: 1px solid #eaeaea;
-  border-radius: 8px;
+  border-radius: 30px 30px 30px 30px;
 }
 
 section#transparansi div.custom-card-content div.card-header {
-  background: #3c89a6;
-  border-radius: 8px 8px 0 0;
+  border-radius: 30px 30px 0px 0px;
+  background: var(
+    --bg-gradien,
+    linear-gradient(
+      135deg,
+      rgba(143, 231, 255, 0.5) 0%,
+      rgba(57, 160, 223, 0.5) 100%
+    )
+  );
 }
 
 section#transparansi div.custom-card-content div.card-body {
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 30px 30px;
   border-radius: 1px solid #c9c9c9;
+}
+@media only screen and (max-width: 1024px) {
+  section#menu-selector {
+    margin: 20px 20px 10px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+
+  section#village {
+    margin: 0px auto;
+  }
+
+  section#video div.card-video {
+    border-radius: 20px;
+    background: var(--text-dark-color, #fff);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.25);
+    display: flex;
+    width: auto;
+    gap: 15px;
+    padding: 25px 20px;
+  }
+
+  section#video div.player-video {
+    width: auto;
+    height: 250px;
+    display: flex;
+    align-items: center;
+  }
 }
 
 @media only screen and (max-width: 769px) {
+  section#ktp div.card-ktp {
+    background: url("../../assets/icons/bg-card-ktp.svg") no-repeat;
+    background-position: center top;
+    width: auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.25);
+  }
   section#hero section#content-hero div.title-head {
     font-family: Roboto;
     font-size: 30px;
@@ -204,7 +248,7 @@ section#transparansi div.custom-card-content div.card-body {
   }
 
   section#hero div#left-content {
-    max-width: 500px;
+    width: auto;
   }
 
   section#hero div#right-content {
@@ -220,13 +264,6 @@ section#transparansi div.custom-card-content div.card-body {
     background: url("../../assets/images/bg-hero-home.png") no-repeat;
     background-size: 100%;
     height: max-content;
-  }
-
-  section#menu-selector {
-    margin: 20px 20px 10px 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
   }
 
   section#menu-selector div.card-menu {
@@ -271,13 +308,13 @@ section#transparansi div.custom-card-content div.card-body {
     background: var(--text-dark-color, #fff);
     box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.25);
     display: block;
-    width: 300px;
+    width: auto;
     gap: 15px;
     padding: 25px 20px;
   }
 
   section#video div.player-video {
-    width: 250px;
+    width: auto;
     display: flex;
     align-items: center;
   }
@@ -327,7 +364,7 @@ section#transparansi div.custom-card-content div.card-body {
   }
 
   section#hero div#left-content {
-    max-width: 350px;
+    width: auto;
   }
 
   section#ktp div.left-content {
@@ -342,13 +379,13 @@ section#transparansi div.custom-card-content div.card-body {
     background: var(--text-dark-color, #fff);
     box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.25);
     display: block;
-    width: 150px;
+    width: auto;
     gap: 5px;
     padding: 15px 10px;
   }
 
   section#video div.player-video {
-    width: 120px;
+    width: auto;
     display: flex;
     align-items: center;
   }

@@ -213,44 +213,52 @@
           </div>
 
           <div
-            class="nav-items d-flex align-content-center gap-4 h-fit-content"
+            class="nav-items d-lg-flex align-content-center gap-4 h-fit-content"
           >
-            <div
-              class="nav-item w-fit-content h-fit-content d-flex align-items-center gap-1 py-2 px-4"
-            >
-              <img src="../../assets/icons/icon-home.svg" alt="icon-home" />
-
-              <p class="font-roboto fw-bold fs-5 text-black mb-0">Beranda</p>
+            <div class="d-flex gap-md-4">
+              <div class="nav-item w-fit-content h-fit-content mt-2 card-nav">
+                <a href="/pages/home/home-main.html" class="d-flex gap-2">
+                  <img src="../../assets/icons/icon-home.svg" alt="home-icon" />
+                  <div class="fs-5 fw-bold">Home</div>
+                </a>
+              </div>
+              <div class="nav-item w-fit-content h-fit-content mt-2 card-nav">
+                <a
+                  href="/pages/monograph/monograph-village-profile.html"
+                  class="d-flex gap-2"
+                >
+                  <img
+                    src="../../assets/icons/icon-monograph.svg"
+                    alt="monograph-icon"
+                  />
+                  <div class="fs-5 fw-bold">Monografi</div>
+                </a>
+              </div>
             </div>
-            <div
-              class="nav-item w-fit-content h-fit-content d-flex align-items-center gap-2 py-2 px-3"
-            >
-              <img
-                src="../../assets/icons/icon-monograph.svg"
-                alt="icon-monograph"
-              />
-
-              <p class="font-roboto fw-bold fs-5 text-black mb-0">Monografi</p>
-            </div>
-            <div
-              class="nav-item w-fit-content h-fit-content d-flex align-items-center gap-1 py-2 px-4"
-            >
-              <img
-                src="../../assets/icons/icon-statistics.svg"
-                alt="icon-statistics"
-              />
-
-              <p class="font-roboto fw-bold fs-5 text-black mb-0">Statistik</p>
-            </div>
-            <div
-              class="nav-item nav-active w-fit-content h-fit-content d-flex align-items-center gap-1 py-2 px-4"
-            >
-              <img
-                src="../../assets/icons/icon-articles-active.svg"
-                alt="icon-articles"
-              />
-
-              <p class="font-roboto fw-bold fs-5 text-primary mb-0">Artikel</p>
+            <div class="d-flex gap-md-4">
+              <div class="nav-item w-fit-content h-fit-content mt-2 card-nav">
+                <a
+                  href="/pages/statistics/statistics-village-market.html"
+                  class="d-flex gap-2"
+                >
+                  <img src="../../assets/icons/icon-statistics.svg" alt="" />
+                  <div class="fs-5 fw-bold">Statistik</div>
+                </a>
+              </div>
+              <div
+                class="nav-item w-fit-content h-fit-content mt-2 card-nav-active"
+              >
+                <a
+                  href="/pages/articles/article-list.html"
+                  class="d-flex gap-2"
+                >
+                  <img
+                    src="../../assets/icons/icon-articles-active.svg"
+                    alt=""
+                  />
+                  <div class="fs-5 fw-bold">Artikel</div>
+                </a>
+              </div>
             </div>
           </div>
 
@@ -466,7 +474,7 @@
       </section>
 
       <!-- Popular  -->
-      <section id="popular">
+      <section id="popular" class="container-fluid">
         <div class="d-flex justify-content-center text-center mb-4">
           <div
             class="h3 w-25 fw-bold pb-3 border border-3 border-primary border-start-0 border-end-0 border-top-0"
@@ -475,7 +483,7 @@
           </div>
         </div>
         <div class="grid-template">
-          <div class="col-span-6 main-card">
+          <div class="col-span-6 main-card clickable">
             <div class="w-100 img">
               <img
                 src="https://mmc.kalteng.go.id/files/berita/24112020031547_0.jpg"
@@ -495,7 +503,7 @@
             </div>
           </div>
           <div class="col-span-6 d-flex flex-column gap-3">
-            <div class="list-card">
+            <div class="list-card clickable">
               <div class="img">
                 <img
                   src="https://sippn.menpan.go.id/images/article/large/header-sipp14.jpg"
@@ -513,7 +521,7 @@
                 </div>
               </div>
             </div>
-            <div class="list-card">
+            <div class="list-card clickable">
               <div class="img">
                 <img
                   src="https://sippn.menpan.go.id/images/article/large/header-sipp14.jpg"
@@ -531,7 +539,7 @@
                 </div>
               </div>
             </div>
-            <div class="list-card">
+            <div class="list-card clickable">
               <div class="img">
                 <img
                   src="https://sippn.menpan.go.id/images/article/large/header-sipp14.jpg"
@@ -555,7 +563,133 @@
 
       <!-- All List  -->
       <section id="all-list" class="grid-template my-5 mx-1 mx-md-5">
-        <div class="card-box col-span-4">
+        <div class="card-box col-span-4 clickable">
+          <div class="w-100 img">
+            <img
+              src="https://ichef.bbci.co.uk/news/1024/branded_news/63FD/production/_92279552_img_0050.jpg"
+              alt="img"
+              width="100%"
+            />
+          </div>
+          <div class="py-2 px-3">
+            <div class="d-flex gap-2">
+              <img src="../../assets/icons/icon-date.svg" alt="date" />
+              <div class="title fw-normal">13 Jan 2012</div>
+            </div>
+            <div class="title fw-bold">
+              Pembangunan Kantor Desa Sidodadi Yang Mewah
+            </div>
+          </div>
+        </div>
+        <div class="card-box col-span-4 clickable">
+          <div class="w-100 img">
+            <img
+              src="https://ichef.bbci.co.uk/news/1024/branded_news/63FD/production/_92279552_img_0050.jpg"
+              alt="img"
+              width="100%"
+            />
+          </div>
+          <div class="py-2 px-3">
+            <div class="d-flex gap-2">
+              <img src="../../assets/icons/icon-date.svg" alt="date" />
+              <div class="title fw-normal">13 Jan 2012</div>
+            </div>
+            <div class="title fw-bold">
+              Pembangunan Kantor Desa Sidodadi Yang Mewah
+            </div>
+          </div>
+        </div>
+        <div class="card-box col-span-4 clickable">
+          <div class="w-100 img">
+            <img
+              src="https://ichef.bbci.co.uk/news/1024/branded_news/63FD/production/_92279552_img_0050.jpg"
+              alt="img"
+              width="100%"
+            />
+          </div>
+          <div class="py-2 px-3">
+            <div class="d-flex gap-2">
+              <img src="../../assets/icons/icon-date.svg" alt="date" />
+              <div class="title fw-normal">13 Jan 2012</div>
+            </div>
+            <div class="title fw-bold">
+              Pembangunan Kantor Desa Sidodadi Yang Mewah
+            </div>
+          </div>
+        </div>
+        <div class="card-box col-span-4 clickable">
+          <div class="w-100 img">
+            <img
+              src="https://ichef.bbci.co.uk/news/1024/branded_news/63FD/production/_92279552_img_0050.jpg"
+              alt="img"
+              width="100%"
+            />
+          </div>
+          <div class="py-2 px-3">
+            <div class="d-flex gap-2">
+              <img src="../../assets/icons/icon-date.svg" alt="date" />
+              <div class="title fw-normal">13 Jan 2012</div>
+            </div>
+            <div class="title fw-bold">
+              Pembangunan Kantor Desa Sidodadi Yang Mewah
+            </div>
+          </div>
+        </div>
+        <div class="card-box col-span-4 clickable">
+          <div class="w-100 img">
+            <img
+              src="https://ichef.bbci.co.uk/news/1024/branded_news/63FD/production/_92279552_img_0050.jpg"
+              alt="img"
+              width="100%"
+            />
+          </div>
+          <div class="py-2 px-3">
+            <div class="d-flex gap-2">
+              <img src="../../assets/icons/icon-date.svg" alt="date" />
+              <div class="title fw-normal">13 Jan 2012</div>
+            </div>
+            <div class="title fw-bold">
+              Pembangunan Kantor Desa Sidodadi Yang Mewah
+            </div>
+          </div>
+        </div>
+        <div class="card-box col-span-4 clickable">
+          <div class="w-100 img">
+            <img
+              src="https://ichef.bbci.co.uk/news/1024/branded_news/63FD/production/_92279552_img_0050.jpg"
+              alt="img"
+              width="100%"
+            />
+          </div>
+          <div class="py-2 px-3">
+            <div class="d-flex gap-2">
+              <img src="../../assets/icons/icon-date.svg" alt="date" />
+              <div class="title fw-normal">13 Jan 2012</div>
+            </div>
+            <div class="title fw-bold">
+              Pembangunan Kantor Desa Sidodadi Yang Mewah
+            </div>
+          </div>
+        </div>
+        <div class="card-box col-span-4 clickable">
+          <div class="w-100 img">
+            <img
+              src="https://ichef.bbci.co.uk/news/1024/branded_news/63FD/production/_92279552_img_0050.jpg"
+              alt="img"
+              width="100%"
+            />
+          </div>
+          <div class="py-2 px-3">
+            <div class="d-flex gap-2">
+              <img src="../../assets/icons/icon-date.svg" alt="date" />
+              <div class="title fw-normal">13 Jan 2012</div>
+            </div>
+            <div class="title fw-bold">
+              Pembangunan Kantor Desa Sidodadi Yang Mewah
+            </div>
+          </div>
+        </div>
+        <div class="card-box col-span-4 clickable">
           <div class="w-100 img">
             <img
               src="https://ichef.bbci.co.uk/news/1024/branded_news/63FD/production/_92279552_img_0050.jpg"
@@ -573,7 +707,7 @@
             </div>
           </div>
         </div>
-        <div class="card-box col-span-4">
+        <div class="card-box col-span-4 clickable">
           <div class="w-100 img">
             <img
               src="https://ichef.bbci.co.uk/news/1024/branded_news/63FD/production/_92279552_img_0050.jpg"
@@ -584,133 +718,7 @@
           <div class="py-2 px-3">
             <div class="d-flex gap-2">
               <img src="../../assets/icons/icon-date.svg" alt="date" />
-              <div class="date fw-normal">13 Jan 2012</div>
-            </div>
-            <div class="title fw-bold">
-              Pembangunan Kantor Desa Sidodadi Yang Mewah
-            </div>
-          </div>
-        </div>
-        <div class="card-box col-span-4">
-          <div class="w-100 img">
-            <img
-              src="https://ichef.bbci.co.uk/news/1024/branded_news/63FD/production/_92279552_img_0050.jpg"
-              alt="img"
-              width="100%"
-            />
-          </div>
-          <div class="py-2 px-3">
-            <div class="d-flex gap-2">
-              <img src="../../assets/icons/icon-date.svg" alt="date" />
-              <div class="date fw-normal">13 Jan 2012</div>
-            </div>
-            <div class="title fw-bold">
-              Pembangunan Kantor Desa Sidodadi Yang Mewah
-            </div>
-          </div>
-        </div>
-        <div class="card-box col-span-4">
-          <div class="w-100 img">
-            <img
-              src="https://ichef.bbci.co.uk/news/1024/branded_news/63FD/production/_92279552_img_0050.jpg"
-              alt="img"
-              width="100%"
-            />
-          </div>
-          <div class="py-2 px-3">
-            <div class="d-flex gap-2">
-              <img src="../../assets/icons/icon-date.svg" alt="date" />
-              <div class="date fw-normal">13 Jan 2012</div>
-            </div>
-            <div class="title fw-bold">
-              Pembangunan Kantor Desa Sidodadi Yang Mewah
-            </div>
-          </div>
-        </div>
-        <div class="card-box col-span-4">
-          <div class="w-100 img">
-            <img
-              src="https://ichef.bbci.co.uk/news/1024/branded_news/63FD/production/_92279552_img_0050.jpg"
-              alt="img"
-              width="100%"
-            />
-          </div>
-          <div class="py-2 px-3">
-            <div class="d-flex gap-2">
-              <img src="../../assets/icons/icon-date.svg" alt="date" />
-              <div class="date fw-normal">13 Jan 2012</div>
-            </div>
-            <div class="title fw-bold">
-              Pembangunan Kantor Desa Sidodadi Yang Mewah
-            </div>
-          </div>
-        </div>
-        <div class="card-box col-span-4">
-          <div class="w-100 img">
-            <img
-              src="https://ichef.bbci.co.uk/news/1024/branded_news/63FD/production/_92279552_img_0050.jpg"
-              alt="img"
-              width="100%"
-            />
-          </div>
-          <div class="py-2 px-3">
-            <div class="d-flex gap-2">
-              <img src="../../assets/icons/icon-date.svg" alt="date" />
-              <div class="date fw-normal">13 Jan 2012</div>
-            </div>
-            <div class="title fw-bold">
-              Pembangunan Kantor Desa Sidodadi Yang Mewah
-            </div>
-          </div>
-        </div>
-        <div class="card-box col-span-4">
-          <div class="w-100 img">
-            <img
-              src="https://ichef.bbci.co.uk/news/1024/branded_news/63FD/production/_92279552_img_0050.jpg"
-              alt="img"
-              width="100%"
-            />
-          </div>
-          <div class="py-2 px-3">
-            <div class="d-flex gap-2">
-              <img src="../../assets/icons/icon-date.svg" alt="date" />
-              <div class="date fw-normal">13 Jan 2012</div>
-            </div>
-            <div class="title fw-bold">
-              Pembangunan Kantor Desa Sidodadi Yang Mewah
-            </div>
-          </div>
-        </div>
-        <div class="card-box col-span-4">
-          <div class="w-100 img">
-            <img
-              src="https://ichef.bbci.co.uk/news/1024/branded_news/63FD/production/_92279552_img_0050.jpg"
-              alt="img"
-              width="100%"
-            />
-          </div>
-          <div class="py-2 px-3">
-            <div class="d-flex gap-2">
-              <img src="../../assets/icons/icon-date.svg" alt="date" />
-              <div class="date fw-normal">13 Jan 2012</div>
-            </div>
-            <div class="title fw-bold">
-              Pembangunan Kantor Desa Sidodadi Yang Mewah
-            </div>
-          </div>
-        </div>
-        <div class="card-box col-span-4">
-          <div class="w-100 img">
-            <img
-              src="https://ichef.bbci.co.uk/news/1024/branded_news/63FD/production/_92279552_img_0050.jpg"
-              alt="img"
-              width="100%"
-            />
-          </div>
-          <div class="py-2 px-3">
-            <div class="d-flex gap-2">
-              <img src="../../assets/icons/icon-date.svg" alt="date" />
-              <div class="date fw-normal">13 Jan 2012</div>
+              <div class="title fw-normal">13 Jan 2012</div>
             </div>
             <div class="title fw-bold">
               Pembangunan Kantor Desa Sidodadi Yang Mewah
