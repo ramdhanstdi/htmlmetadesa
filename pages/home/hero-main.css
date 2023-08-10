@@ -64,14 +64,14 @@ div#running-text {
   padding: 4px;
 }
 
-section#menu-selector {
+div#menu-selector {
   margin: 80px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 30px;
 }
 
-section#menu-selector div.card-menu {
+div#menu-selector div.card-menu {
   border-radius: 20px;
   background: #fff;
   width: 200px;
@@ -205,12 +205,33 @@ section#transparansi div.custom-card-content div.card-body {
   margin: 10px auto;
 }
 
+section#content-hero div.card-hero {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 @media only screen and (max-width: 1024px) {
-  section#menu-selector {
+  main section#hero {
+    background: url("../../assets/images/bg-hero-home.png") no-repeat;
+    background-size: 100%;
+    height: auto;
+  }
+
+  section#content-hero div.card-hero {
+    width: 100%;
+    display: block;
+  }
+
+  div#menu-selector {
     margin: 20px 20px 10px 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+  }
+
+  section#hero div#left-content {
+    width: auto;
   }
 
   section#village {
@@ -232,6 +253,19 @@ section#transparansi div.custom-card-content div.card-body {
     height: 250px;
     display: flex;
     align-items: center;
+  }
+
+  section#hero section#content-hero {
+    margin: 0px 24px;
+    display: block;
+  }
+  section#hero div#right-content {
+    margin-right: 20px;
+    background-color: #f3f3f3;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -255,31 +289,13 @@ section#transparansi div.custom-card-content div.card-body {
     line-height: normal;
   }
 
-  section#hero section#content-hero {
-    margin: 0px 24px;
-    display: block;
-  }
-
-  section#hero div#left-content {
-    width: auto;
-  }
-
-  section#hero div#right-content {
-    margin-right: 20px;
-    background-color: #f3f3f3;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   main section#hero {
     background: url("../../assets/images/bg-hero-home.png") no-repeat;
     background-size: 100%;
     height: max-content;
   }
 
-  section#menu-selector div.card-menu {
+  div#menu-selector div.card-menu {
     border-radius: 20px;
     background: #fff;
     padding: 20px 10px 10px 10px;
@@ -361,14 +377,14 @@ section#transparansi div.custom-card-content div.card-body {
     width: 100%;
   }
 
-  section#menu-selector {
+  div#menu-selector {
     margin: 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
 
-  section#menu-selector div.card-menu {
+  div#menu-selector div.card-menu {
     border-radius: 20px;
     background: #fff;
     padding: 10px 10px;

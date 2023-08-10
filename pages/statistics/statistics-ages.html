@@ -13,6 +13,12 @@
       crossorigin="anonymous"
     />
 
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./statistics-ages.css" />
     <link rel="stylesheet" href="../../style/global.css" />
@@ -22,7 +28,7 @@
       <section id="hero" class="py-3">
         <!-- Navigation Bar -->
         <nav
-          class="container-fluid d-flex justify-content-between align-items-center w-100 mb-5"
+          class="container-fluid d-flex justify-content-between sticky-top align-items-center w-100 mb-5"
         >
           <!-- Menu Icon -->
           <button
@@ -260,164 +266,236 @@
             class="clickable"
           />
         </nav>
+
         <section
           id="village-statistics"
-          class="container-xxl d-flex flex-column justify-content-between align-items-center gap-5 mt-5"
+          class="container-xxl d-flex swiper swipper-villages flex-column justify-content-between align-items-center gap-5 mt-5"
         >
-          <div
-            class="list-statistics d-flex flex-wrap justify-content-center justify-content-lg-start flex-lg-nowrap align-items-center gap-4"
-          >
+          <div class="list-statistics swiper-wrapper gap-4">
             <!-- First Content - Statistik Penduduk -->
-            <div
-              class="custom-card card-active d-flex flex-column justify-content-center align-items-center gap-3"
-            >
-              <img
-                src="../../assets/illustrations/illustration-phone.png"
-                alt="illustration-phone"
-                width="75"
-                height="75"
-              />
-
-              <h4
-                class="fw-bolder text-center font-helvetica-neue fs-4 mt-md-1 mt-xl-3"
+            <div class="swiper-slide w-fit-content mx-2">
+              <div
+                class="custom-card card-active d-flex flex-column justify-content-center align-items-center gap-3"
               >
-                Statistik Penduduk
-              </h4>
+                <img
+                  src="../../assets/illustrations/illustration-phone.png"
+                  alt="illustration-phone"
+                  width="75"
+                  height="75"
+                />
+
+                <h4
+                  class="fw-bolder text-center font-helvetica-neue fs-4 mt-md-1 mt-xl-3"
+                >
+                  Statistik Penduduk
+                </h4>
+              </div>
             </div>
 
             <!-- Second Content - Statistik Keluarga -->
-            <div
-              class="custom-card d-flex clickable flex-column justify-content-center align-items-center gap-3"
-            >
-              <img
-                src="../../assets/illustrations/illustration-family.png"
-                alt="illustration-family"
-                width="75"
-                height="75"
-              />
-
-              <h4
-                class="fw-bolder text-center font-helvetica-neue fs-4 mt-md-1 mt-xl-3"
+            <div class="swiper-slide w-fit-content mx-2">
+              <div
+                class="custom-card d-flex clickable flex-column justify-content-center align-items-center gap-3"
               >
-                Statistik Keluarga
-              </h4>
+                <img
+                  src="../../assets/illustrations/illustration-family.png"
+                  alt="illustration-family"
+                  width="75"
+                  height="75"
+                />
+
+                <h4
+                  class="fw-bolder text-center font-helvetica-neue fs-4 mt-md-1 mt-xl-3"
+                >
+                  Statistik Keluarga
+                </h4>
+              </div>
             </div>
 
             <!-- Third Content - Statistik Bantuan -->
-            <div
-              class="custom-card d-flex clickable flex-column justify-content-center align-items-center gap-3"
-            >
-              <img
-                src="../../assets/illustrations/illustration-phone.png"
-                alt="illustration-phone"
-                width="75"
-                height="75"
-              />
-
-              <h4
-                class="fw-bolder text-center font-helvetica-neue fs-4 mt-md-1 mt-xl-3"
+            <div class="swiper-slide w-fit-content mx-2">
+              <div
+                class="custom-card d-flex clickable flex-column justify-content-center align-items-center gap-3"
               >
-                Statistik Bantuan
-              </h4>
+                <img
+                  src="../../assets/illustrations/illustration-phone.png"
+                  alt="illustration-phone"
+                  width="75"
+                  height="75"
+                />
+
+                <h4
+                  class="fw-bolder text-center font-helvetica-neue fs-4 mt-md-1 mt-xl-3"
+                >
+                  Statistik Bantuan
+                </h4>
+              </div>
             </div>
 
             <!-- Fourth Content - Data Periode -->
-            <div
-              class="custom-card d-flex clickable flex-column justify-content-center align-items-center gap-3"
-            >
-              <img
-                src="../../assets/illustrations/illustration-period.png"
-                alt="illustration-period"
-                width="75"
-                height="75"
-              />
-
-              <h4
-                class="fw-bolder text-center font-helvetica-neue fs-4 mt-md-1 mt-xl-3"
+            <div class="swiper-slide w-fit-content mx-2">
+              <div
+                class="custom-card d-flex clickable flex-column justify-content-center align-items-center gap-3"
               >
-                Data Periode
-              </h4>
+                <img
+                  src="../../assets/illustrations/illustration-period.png"
+                  alt="illustration-period"
+                  width="75"
+                  height="75"
+                />
+
+                <h4
+                  class="fw-bolder text-center font-helvetica-neue fs-4 mt-md-1 mt-xl-3"
+                >
+                  Data Periode
+                </h4>
+              </div>
             </div>
 
             <!-- Five Content - Statistik Lainnya -->
-            <div
-              class="custom-card d-flex clickable flex-column justify-content-center align-items-center gap-3"
-            >
-              <img
-                src="../../assets/illustrations/illustration-statistics.png"
-                alt="illustration-phone"
-                width="75"
-                height="75"
-              />
-
-              <h4
-                class="fw-bolder text-center font-helvetica-neue fs-4 mt-md-1 mt-xl-3"
+            <div class="swiper-slide w-fit-content mx-2">
+              <div
+                class="custom-card d-flex clickable flex-column justify-content-center align-items-center gap-3"
               >
-                Statistik Lainnya
-              </h4>
+                <img
+                  src="../../assets/illustrations/illustration-statistics.png"
+                  alt="illustration-phone"
+                  width="75"
+                  height="75"
+                />
+
+                <h4
+                  class="fw-bolder text-center font-helvetica-neue fs-4 mt-md-1 mt-xl-3"
+                >
+                  Statistik Lainnya
+                </h4>
+              </div>
+            </div>
+            <!-- Five Content - Statistik Lainnya -->
+            <div class="swiper-slide w-fit-content mx-2">
+              <div
+                class="custom-card d-flex clickable flex-column justify-content-center align-items-center gap-3"
+              >
+                <img
+                  src="../../assets/illustrations/illustration-statistics.png"
+                  alt="illustration-phone"
+                  width="75"
+                  height="75"
+                />
+
+                <h4
+                  class="fw-bolder text-center font-helvetica-neue fs-4 mt-md-1 mt-xl-3"
+                >
+                  Statistik Lainnya
+                </h4>
+              </div>
+            </div>
+            <!-- Five Content - Statistik Lainnya -->
+            <div class="swiper-slide w-fit-content mx-2">
+              <div
+                class="custom-card d-flex clickable flex-column justify-content-center align-items-center gap-3"
+              >
+                <img
+                  src="../../assets/illustrations/illustration-statistics.png"
+                  alt="illustration-phone"
+                  width="75"
+                  height="75"
+                />
+
+                <h4
+                  class="fw-bolder text-center font-helvetica-neue fs-4 mt-md-1 mt-xl-3"
+                >
+                  Statistik Lainnya
+                </h4>
+              </div>
             </div>
           </div>
         </section>
 
         <section id="statistics-ages" class="container-xxl mt-5">
           <div class="custom-card d-flex flex-column gap-5 p-4 rounded-2">
-            <div class="row justify-content-start">
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mb-lg-0">
-                <a href="../statistics/statistics-ages.html">
-                  <div
-                    class="box-tab box-active rounded-3 d-flex flex-column justify-content-between align-items-center"
-                  >
-                    <h1
-                      class="text-white fs-5 fw-bolder font-helvetica-neue w-fit-content h-fit-content mb-0 py-5"
+            <!-- List Villages  -->
+            <section
+              id="list-villages"
+              class="container-xxl swiper swipper-villages"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide w-fit-content">
+                  <a href="../statistics/statistics-ages.html">
+                    <div
+                      class="box-tab box-active rounded-3 d-flex flex-column justify-content-between align-items-center"
                     >
-                      Umur (Rentang)
-                    </h1>
-                  </div>
-                </a>
-              </div>
+                      <h1
+                        class="text-white fs-5 fw-bolder font-helvetica-neue w-fit-content h-fit-content mb-0 py-5"
+                      >
+                        Umur (Rentang)
+                      </h1>
+                    </div>
+                  </a>
+                </div>
 
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mb-lg-0">
-                <a href="../statistics/statistics-birth-certificate.html">
+                <div class="swiper-slide w-fit-content">
+                  <a href="../statistics/statistics-birth-certificate.html">
+                    <div
+                      class="box-tab clickable rounded-3 d-flex flex-column justify-content-between align-items-center"
+                    >
+                      <h1
+                        class="text-white fs-5 fw-bolder font-helvetica-neue w-fit-content h-fit-content mb-0 py-5"
+                      >
+                        Akta Kelahiran
+                      </h1>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide w-fit-content">
                   <div
                     class="box-tab clickable rounded-3 d-flex flex-column justify-content-between align-items-center"
                   >
                     <h1
                       class="text-white fs-5 fw-bolder font-helvetica-neue w-fit-content h-fit-content mb-0 py-5"
                     >
-                      Akta Kelahiran
+                      Akseptor KB
                     </h1>
                   </div>
-                </a>
-              </div>
+                </div>
 
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mb-lg-0">
-                <div
-                  class="box-tab clickable rounded-3 d-flex flex-column justify-content-between align-items-center"
-                >
-                  <h1
-                    class="text-white fs-5 fw-bolder font-helvetica-neue w-fit-content h-fit-content mb-0 py-5"
+                <div class="swiper-slide w-fit-content">
+                  <div
+                    class="box-tab rounded-3 d-flex flex-column justify-content-center align-items-center"
                   >
-                    Akseptor KB
-                  </h1>
+                    <h1 class="text-white fs-5 fw-bolder font-helvetica-neue">
+                      Desa Pringsewu Sel
+                    </h1>
+                  </div>
+                </div>
+
+                <div class="swiper-slide w-fit-content">
+                  <div
+                    class="box-tab clickable rounded-3 d-flex flex-column justify-content-between align-items-center"
+                  >
+                    <h1
+                      class="text-white fs-5 fw-bolder font-helvetica-neue w-fit-content h-fit-content mb-0 py-5"
+                    >
+                      Asuransi Kesehatan
+                    </h1>
+                  </div>
+                </div>
+                <div class="swiper-slide w-fit-content">
+                  <div
+                    class="box-tab rounded-3 d-flex flex-column justify-content-center align-items-center"
+                  >
+                    <h1 class="text-white fs-5 fw-bolder font-helvetica-neue">
+                      Desa Podosari
+                    </h1>
+                  </div>
                 </div>
               </div>
-
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 mb-lg-0">
-                <div
-                  class="box-tab clickable rounded-3 d-flex flex-column justify-content-between align-items-center"
-                >
-                  <h1
-                    class="text-white fs-5 fw-bolder font-helvetica-neue w-fit-content h-fit-content mb-0 py-5"
-                  >
-                    Asuransi Kesehatan
-                  </h1>
-                </div>
-              </div>
-            </div>
+            </section>
 
             <div class="data">
               <div class="container">
-                <div class="card">
+                <div class="card table-responsive">
                   <div class="header-data">
                     <h2 class="text-center">Statistik Data Umur (Rentang)</h2>
                   </div>
@@ -593,8 +671,12 @@
         <section id="content" class="container-fluid px-5 py-5">
           <div class="row">
             <div class="col-12 col-md-6 col-lg-4">
-              <div class="d-flex flex-column gap-5">
-                <div class="heading d-flex flex-column gap-2">
+              <div
+                class="d-flex flex-column align-items-center align-items-md-start gap-5"
+              >
+                <div
+                  class="heading d-flex flex-column align-items-center align-items-md-start gap-2"
+                >
                   <h4 class="fw-bolder font-helvetica-neue fs-4 d-inline">
                     Website Resmi
                   </h4>
@@ -602,7 +684,9 @@
                   <div class="divider"></div>
                 </div>
 
-                <div class="d-flex gap-3 align-items-start">
+                <div
+                  class="d-flex flex-column flex-md-row gap-3 align-items-center align-items-md-start"
+                >
                   <!-- Logo -->
                   <div class="box-logo p-2 bg-white rounded-2">
                     <img src="../../assets/images/logo.png" alt="logo" />
@@ -611,7 +695,7 @@
                   <div class="information">
                     <h2 class="fw-bolder font-roboto fs-2">Pekon Podomoro</h2>
 
-                    <p class="fs-6 fw-semibold font-roboto w-90">
+                    <p class="fs-6 fw-semibold font-roboto w-full">
                       Jl. Nawatama. No.175, Podomoro, Kec. Pringsewu, Kabupaten
                       Pringsewu, Lampung 35373
                     </p>
@@ -622,7 +706,9 @@
 
             <div class="col-12 col-md-6 col-lg-4">
               <div class="d-flex flex-column gap-5">
-                <div class="heading d-flex flex-column gap-2">
+                <div
+                  class="heading d-flex flex-column align-items-center align-items-md-start gap-2"
+                >
                   <h4 class="fw-bolder font-helvetica-neue fs-4 d-inline">
                     Hubungi Kami
                   </h4>
@@ -630,7 +716,9 @@
                   <div class="divider"></div>
                 </div>
 
-                <div class="list-contacts d-flex flex-column gap-2">
+                <div
+                  class="list-contacts d-flex flex-column align-items-center align-items-md-start gap-2"
+                >
                   <div class="d-flex gap-2">
                     <!-- Phone Icon -->
                     <img
@@ -704,8 +792,12 @@
             </div>
 
             <div class="col-12 col-md-6 col-lg-4">
-              <div class="d-flex flex-column gap-5">
-                <div class="heading d-flex flex-column gap-2">
+              <div
+                class="d-flex flex-column align-items-center align-items-md-start gap-5"
+              >
+                <div
+                  class="heading d-flex align-items-center align-items-md-start flex-column gap-2"
+                >
                   <h4 class="fw-bolder font-helvetica-neue fs-4 d-inline">
                     Lokasi Balai Desa
                   </h4>
@@ -758,5 +850,32 @@
     <script src="../../chart/charts.js"></script>
     <script src="../../chart/themes/animated.js"></script>
     <script src="./piechart-umur.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+
+      var swiperVillages = new Swiper(".swipper-villages", {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>

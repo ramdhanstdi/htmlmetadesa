@@ -53,6 +53,10 @@ section#hero section#village-statistics div.custom-card img {
   height: 80px;
 }
 
+div.information {
+  text-align: start;
+}
+
 @media only screen and (min-width: 460px) {
   section#hero section#content div.custom-card {
     padding: 50px 30px 30px;
@@ -68,6 +72,10 @@ section#hero section#village-statistics div.custom-card img {
   section#hero section#village-statistics div.custom-card img {
     width: 60px;
     height: 60px;
+  }
+
+  div.information {
+    text-align: center;
   }
 }
 
