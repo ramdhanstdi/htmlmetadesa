@@ -19,251 +19,245 @@
   </head>
   <body>
     <main>
-      <section id="hero" class="py-3">
-        <!-- Navigation Bar -->
-        <nav
-          class="container-fluid d-flex justify-content-between sticky-top align-items-center w-100 mb-5"
+      <!-- Navigation Bar -->
+      <nav
+        class="container-fluid d-flex justify-content-between sticky-top align-items-center w-100 p-2"
+      >
+        <!-- Menu Icon -->
+        <button
+          type="button"
+          class="border-0 rounded"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
         >
-          <!-- Menu Icon -->
-          <button
-            type="button"
-            class="border-0"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
-          >
-            <img src="../../assets/icons/icon-menus.svg" alt="menu-icon" />
-          </button>
+          <img src="../../assets/icons/icon-menus.svg" alt="menu-icon" />
+        </button>
 
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="exampleModal"
-            tabindex="-1"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog ms-2">
-              <div class="modal-content">
-                <div class="modal-body d-flex flex-column gap-4">
-                  <div
-                    class="box-header box-custom-radial d-flex gap-3 px-4 py-3"
-                  >
-                    <img src="../../assets/images/box-logo.png" alt="logo" />
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog ms-2">
+            <div class="modal-content">
+              <div class="modal-body d-flex flex-column gap-4">
+                <div
+                  class="box-header box-custom-radial d-flex gap-3 px-4 py-3"
+                >
+                  <img src="../../assets/images/box-logo.png" alt="logo" />
 
-                    <div class="information">
-                      <h2 class="fw-bolder font-roboto fs-2 mb-0">
-                        Pekon Podomoro
-                      </h2>
+                  <div class="information">
+                    <h2 class="fw-bolder font-roboto fs-2 mb-0">
+                      Pekon Podomoro
+                    </h2>
 
-                      <p class="fs-6 fw-semibold font-roboto w-90 mb-0">
-                        Jl. Nawatama. No.175, Podomoro, Kec. Pringsewu,
-                        Kabupaten Pringsewu, Lampung 35373
+                    <p class="fs-6 fw-semibold font-roboto w-90 mb-0">
+                      Jl. Nawatama. No.175, Podomoro, Kec. Pringsewu, Kabupaten
+                      Pringsewu, Lampung 35373
+                    </p>
+                  </div>
+                </div>
+
+                <div class="list-menus row justify-content-start">
+                  <div class="col-6 col-md-4 clickable">
+                    <div
+                      class="box-custom-radial d-flex flex-column align-items-center gap-3 px-2 py-4 mb-4 rounded-3 w-100"
+                    >
+                      <img
+                        src="../../assets/icons/icon-sso.svg"
+                        alt="icon-sso"
+                      />
+
+                      <p class="text-roboto fs-6 fw-bold text-black mb-0">
+                        SSO Metadesa
                       </p>
                     </div>
                   </div>
 
-                  <div class="list-menus row justify-content-start">
-                    <div class="col-6 col-md-4 clickable">
-                      <div
-                        class="box-custom-radial d-flex flex-column align-items-center gap-3 px-2 py-4 mb-4 rounded-3 w-100"
-                      >
-                        <img
-                          src="../../assets/icons/icon-sso.svg"
-                          alt="icon-sso"
-                        />
+                  <div class="col-6 col-md-4 clickable">
+                    <div
+                      class="box-custom-radial d-flex flex-column align-items-center gap-3 px-2 py-4 mb-4 rounded-3 w-100"
+                    >
+                      <img
+                        src="../../assets/icons/icon-smart-village.svg"
+                        alt="icon-sso"
+                      />
 
-                        <p class="text-roboto fs-6 fw-bold text-black mb-0">
-                          SSO Metadesa
-                        </p>
-                      </div>
+                      <p class="text-roboto fs-6 fw-bold text-black mb-0">
+                        Smart Village
+                      </p>
                     </div>
+                  </div>
 
-                    <div class="col-6 col-md-4 clickable">
-                      <div
-                        class="box-custom-radial d-flex flex-column align-items-center gap-3 px-2 py-4 mb-4 rounded-3 w-100"
-                      >
-                        <img
-                          src="../../assets/icons/icon-smart-village.svg"
-                          alt="icon-sso"
-                        />
+                  <div class="col-6 col-md-4 clickable">
+                    <div
+                      class="box-custom-radial d-flex flex-column align-items-center gap-3 px-2 py-4 mb-4 rounded-3 w-100"
+                    >
+                      <img
+                        src="../../assets/icons/icon-idm-status.svg"
+                        alt="icon-idm"
+                      />
 
-                        <p class="text-roboto fs-6 fw-bold text-black mb-0">
-                          Smart Village
-                        </p>
-                      </div>
+                      <p class="text-roboto fs-6 fw-bold text-black mb-0">
+                        Status IDM
+                      </p>
                     </div>
+                  </div>
 
-                    <div class="col-6 col-md-4 clickable">
-                      <div
-                        class="box-custom-radial d-flex flex-column align-items-center gap-3 px-2 py-4 mb-4 rounded-3 w-100"
-                      >
-                        <img
-                          src="../../assets/icons/icon-idm-status.svg"
-                          alt="icon-idm"
-                        />
+                  <div class="col-6 col-md-4 clickable">
+                    <div
+                      class="box-custom-radial d-flex flex-column align-items-center gap-3 px-2 py-4 mb-4 rounded-3 w-100"
+                    >
+                      <img
+                        src="../../assets/icons/icon-attendance.svg"
+                        alt="icon-attendance"
+                      />
 
-                        <p class="text-roboto fs-6 fw-bold text-black mb-0">
-                          Status IDM
-                        </p>
-                      </div>
+                      <p class="text-roboto fs-6 fw-bold text-black mb-0">
+                        Kehadiran
+                      </p>
                     </div>
+                  </div>
 
-                    <div class="col-6 col-md-4 clickable">
-                      <div
-                        class="box-custom-radial d-flex flex-column align-items-center gap-3 px-2 py-4 mb-4 rounded-3 w-100"
-                      >
-                        <img
-                          src="../../assets/icons/icon-attendance.svg"
-                          alt="icon-attendance"
-                        />
+                  <div class="col-6 col-md-4 clickable">
+                    <div
+                      class="box-custom-radial d-flex flex-column align-items-center gap-3 px-2 py-4 mb-4 rounded-3 w-100"
+                    >
+                      <img
+                        src="../../assets/icons/icon-2-user.svg"
+                        alt="icon-aparat"
+                      />
 
-                        <p class="text-roboto fs-6 fw-bold text-black mb-0">
-                          Kehadiran
-                        </p>
-                      </div>
+                      <p class="text-roboto fs-6 fw-bold text-black mb-0">
+                        Data Aparat
+                      </p>
                     </div>
+                  </div>
 
-                    <div class="col-6 col-md-4 clickable">
-                      <div
-                        class="box-custom-radial d-flex flex-column align-items-center gap-3 px-2 py-4 mb-4 rounded-3 w-100"
-                      >
-                        <img
-                          src="../../assets/icons/icon-2-user.svg"
-                          alt="icon-aparat"
-                        />
+                  <div class="col-6 col-md-4 clickable">
+                    <div
+                      class="box-custom-radial d-flex flex-column align-items-center gap-3 px-2 py-4 mb-4 rounded-3 w-100"
+                    >
+                      <img
+                        src="../../assets/icons/icon-add-user.svg"
+                        alt="icon-buku-tamu"
+                      />
 
-                        <p class="text-roboto fs-6 fw-bold text-black mb-0">
-                          Data Aparat
-                        </p>
-                      </div>
+                      <p class="text-roboto fs-6 fw-bold text-black mb-0">
+                        Buku Tamu
+                      </p>
                     </div>
+                  </div>
 
-                    <div class="col-6 col-md-4 clickable">
-                      <div
-                        class="box-custom-radial d-flex flex-column align-items-center gap-3 px-2 py-4 mb-4 rounded-3 w-100"
-                      >
-                        <img
-                          src="../../assets/icons/icon-add-user.svg"
-                          alt="icon-buku-tamu"
-                        />
+                  <div class="col-6 col-md-4 clickable">
+                    <div
+                      class="box-custom-radial d-flex flex-column align-items-center gap-3 px-2 py-4 mb-4 rounded-3 w-100"
+                    >
+                      <img
+                        src="../../assets/icons/icon-e-bumdes.svg"
+                        alt="icon-e-bumdes"
+                      />
 
-                        <p class="text-roboto fs-6 fw-bold text-black mb-0">
-                          Buku Tamu
-                        </p>
-                      </div>
+                      <p class="text-roboto fs-6 fw-bold text-black mb-0">
+                        E-BUMDes
+                      </p>
                     </div>
+                  </div>
 
-                    <div class="col-6 col-md-4 clickable">
-                      <div
-                        class="box-custom-radial d-flex flex-column align-items-center gap-3 px-2 py-4 mb-4 rounded-3 w-100"
-                      >
-                        <img
-                          src="../../assets/icons/icon-e-bumdes.svg"
-                          alt="icon-e-bumdes"
-                        />
+                  <div class="col-6 col-md-4 clickable">
+                    <div
+                      class="box-custom-radial d-flex flex-column align-items-center gap-3 px-2 py-4 mb-4 rounded-3 w-100"
+                    >
+                      <img
+                        src="../../assets/icons/icon-pkk.svg"
+                        alt="icon-pkk"
+                      />
 
-                        <p class="text-roboto fs-6 fw-bold text-black mb-0">
-                          E-BUMDes
-                        </p>
-                      </div>
+                      <p class="text-roboto fs-6 fw-bold text-black mb-0">
+                        PKK
+                      </p>
                     </div>
+                  </div>
 
-                    <div class="col-6 col-md-4 clickable">
-                      <div
-                        class="box-custom-radial d-flex flex-column align-items-center gap-3 px-2 py-4 mb-4 rounded-3 w-100"
-                      >
-                        <img
-                          src="../../assets/icons/icon-pkk.svg"
-                          alt="icon-pkk"
-                        />
+                  <div class="col-6 col-md-4 clickable">
+                    <div
+                      class="box-custom-radial d-flex flex-column align-items-center gap-3 px-2 py-4 mb-4 rounded-3 w-100"
+                    >
+                      <img
+                        src="../../assets/icons/icon-posyandu.svg"
+                        alt="icon-posyandu"
+                      />
 
-                        <p class="text-roboto fs-6 fw-bold text-black mb-0">
-                          PKK
-                        </p>
-                      </div>
-                    </div>
-
-                    <div class="col-6 col-md-4 clickable">
-                      <div
-                        class="box-custom-radial d-flex flex-column align-items-center gap-3 px-2 py-4 mb-4 rounded-3 w-100"
-                      >
-                        <img
-                          src="../../assets/icons/icon-posyandu.svg"
-                          alt="icon-posyandu"
-                        />
-
-                        <p class="text-roboto fs-6 fw-bold text-black mb-0">
-                          Posyandu
-                        </p>
-                      </div>
+                      <p class="text-roboto fs-6 fw-bold text-black mb-0">
+                        Posyandu
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <div
-            class="nav-items d-lg-flex align-content-center gap-4 h-fit-content"
-          >
-            <div class="d-flex gap-md-4">
-              <div class="nav-item w-fit-content h-fit-content mt-2 card-nav">
-                <a href="/pages/home/home-main.html" class="d-flex gap-2">
-                  <img src="../../assets/icons/icon-home.svg" alt="home-icon" />
-                  <div class="fs-5 fw-bold">Home</div>
-                </a>
-              </div>
-              <div
-                class="nav-item w-fit-content h-fit-content mt-2 card-nav-active"
+        </div>
+        <div
+          class="nav-items d-lg-flex align-content-center gap-4 h-fit-content"
+        >
+          <div class="d-flex gap-md-4">
+            <div class="nav-item w-fit-content h-fit-content mt-2 card-nav">
+              <a href="/pages/home/home-main.html" class="d-flex gap-2">
+                <img src="../../assets/icons/icon-home.svg" alt="home-icon" />
+                <div class="fs-5 fw-bold">Home</div>
+              </a>
+            </div>
+            <div
+              class="nav-item w-fit-content h-fit-content mt-2 card-nav-active"
+            >
+              <a
+                href="/pages/monograph/monograph-village-profile.html"
+                class="d-flex gap-2"
               >
-                <a
-                  href="/pages/monograph/monograph-village-profile.html"
-                  class="d-flex gap-2"
-                >
-                  <img
-                    src="../../assets/icons/icon-monograph-active.svg"
-                    alt="monograph-icon"
-                  />
-                  <div class="fs-5 fw-bold text-primary">Monografi</div>
-                </a>
-              </div>
-              <div class="d-flex gap-md-4"></div>
-              <div class="nav-item w-fit-content h-fit-content mt-2 card-nav">
-                <a
-                  href="/pages/statistics/statistics.html"
-                  class="d-flex gap-2"
-                >
-                  <img src="../../assets/icons/icon-statistic.svg" alt="" />
-                  <div class="fs-5 fw-bold">Statistik</div>
-                </a>
-              </div>
-              <div class="nav-item w-fit-content h-fit-content mt-2 card-nav">
-                <a
-                  href="/pages/articles/article-list.html"
-                  class="d-flex gap-2"
-                >
-                  <img src="../../assets/icons/icon-article.svg" alt="" />
-                  <div class="fs-5 fw-bold">Artikel</div>
-                </a>
-              </div>
+                <img
+                  src="../../assets/icons/icon-monograph-active.svg"
+                  alt="monograph-icon"
+                />
+                <div class="fs-5 fw-bold text-primary">Monografi</div>
+              </a>
             </div>
           </div>
+          <div class="d-flex gap-md-4">
+            <div class="nav-item w-fit-content h-fit-content mt-2 card-nav">
+              <a href="/pages/statistics/statistics.html" class="d-flex gap-2">
+                <img src="../../assets/icons/icon-statistic.svg" alt="" />
+                <div class="fs-5 fw-bold">Statistik</div>
+              </a>
+            </div>
+            <div class="nav-item w-fit-content h-fit-content mt-2 card-nav">
+              <a href="/pages/articles/article-list.html" class="d-flex gap-2">
+                <img src="../../assets/icons/icon-article.svg" alt="" />
+                <div class="fs-5 fw-bold">Artikel</div>
+              </a>
+            </div>
+          </div>
+        </div>
 
-          <!-- User Profile Icon -->
-          <img
-            src="../../assets/icons/icon-user-profile.svg"
-            alt="user-icon"
-            class="clickable"
-          />
-        </nav>
+        <!-- User Profile Icon -->
+        <img
+          src="../../assets/icons/icon-user-profile.svg"
+          alt="user-icon"
+          class="clickable"
+        />
+      </nav>
 
+      <section id="hero" class="py-3">
         <section
           id="monograph-facilities-infrastructure"
           class="container-fluid d-flex flex-column flex-md-row gap-4 w-100"
         >
           <section
             id="sidebar-menu"
-            class="d-flex flex-md-column sticky-md-top justify-content-center align-items-center h-fit-content"
+            class="d-flex flex-md-column mt-5 justify-content-center align-items-center h-fit-content"
           >
             <a href="../monograph/monograph-village-profile.html">
               <img

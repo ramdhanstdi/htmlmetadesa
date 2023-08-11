@@ -2,9 +2,10 @@ main section#hero {
   background: url("../../assets/images/bg-hero-home.png") no-repeat;
   background-size: 100%;
   height: 540px;
+  position: relative;
 }
 
-section#hero div.card-nav-active {
+div.card-nav-active {
   background: #ffffff;
   border-radius: 25px;
   padding: 5px 20px;
@@ -13,7 +14,7 @@ section#hero div.card-nav-active {
   cursor: pointer;
 }
 
-section#hero div.card-nav {
+div.card-nav {
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.25);
   padding: 5px 20px;
@@ -372,7 +373,7 @@ section#content-hero div.card-hero {
   }
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 451px) {
   section#hero section#left-content {
     width: 100%;
   }

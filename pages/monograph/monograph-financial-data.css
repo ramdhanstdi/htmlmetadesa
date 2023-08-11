@@ -31,6 +31,10 @@ section#hero section#sidebar-menu {
   box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.25);
   gap: 50px;
   padding: 24px 4px;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  top: 130px;
 }
 
 section#hero section#monograph-financial-data section#content {
@@ -71,6 +75,7 @@ section#content div.custom-card-content div.card-body {
     background: rgba(255, 255, 255);
     box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.25);
     gap: 50px;
+    position: static;
     padding: 10px 20px;
   }
 }
