@@ -219,6 +219,11 @@ div.information {
   text-align: start;
 }
 
+.modal-backdrop.show {
+  opacity: 0 !important;
+  z-index: -1 !important;
+}
+
 @media only screen and (max-width: 769px) {
   .grid-template {
     display: grid;
