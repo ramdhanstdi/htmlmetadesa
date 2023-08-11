@@ -129,7 +129,7 @@ section#all-list div.title {
   }
 
   section#popular div.main-card {
-    width: 340px;
+    width: auto;
     height: auto;
     border-radius: 15px;
     background: var(--text-dark-color, #fff);
@@ -155,7 +155,7 @@ section#all-list div.title {
   }
 
   section#popular div.list-card {
-    width: 350px;
+    width: auto;
     height: 200px;
     border-radius: 15px;
     background: var(--text-dark-color, #fff);
